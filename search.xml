@@ -179,31 +179,6 @@
     
     
     <entry>
-      <title>String,StringBuilder,StringBuffer</title>
-      <link href="/2022/09/15/String,StringBuilder,StringBuffer/"/>
-      <url>/2022/09/15/String,StringBuilder,StringBuffer/</url>
-      
-        <content type="html"><![CDATA[<p>区别：</p><a id="more"></a><p><strong>1，是否可变</strong></p><p>String对象创建后，一旦初始化就不能修改，因为String类中的所有数据都是常量。对String类的任何改变，都返回一个新的String类对象，效率低，浪费内存空间。</p><p>StringBuilder和StringBuffer的对象是可变的。</p><p>StringBuilder：是在Java5中被提出来的。StringBuilder是一个可变的字符序列，可以用append()方法进行对字符串的追加，insert()插入，StringBuilder的原理和StringBuffer一样，但是线程是不安全的。</p><p>StringBuffer：StringBuffer是使用缓冲区的，本身也是操作字符串，但与String类不同，String类中的内容一旦声明就无法改变，改变的只是其内存地址的指向。但是StringBuffer中的内存是可以改变的。append()追加方法，reverse()反转，replace()代替，delete()删除，insert()插入。</p><p><strong>2，构造</strong></p><p>String类是引用数据类型</p><p>StringBuilder和StringBuffer本身是一个具体的操作类，所以不能像String那样用直接赋值的方法进行对象实例化，必须要通过构造方法来完成。（为了获得更好性能，在构造StringBuilder和StringBuffer时要指定其容量，当不指定容量时会默认构造一个容量为16的对象）</p><p><strong>3，线程与速度</strong></p><p>StringBuilder在大多数实现中比StringBuffer快，将StringBuilder用于多个线程是不安全的（不能同步访问），但是在单个线程里StringBuilder比StringBuffer性能好。</p><p>StringBuffer线程是安全的。</p><p>StringBuilder相对于StringBuffer有速度优势，所以一般情况下推荐使用StringBuilder，但是在程序要求线程安全的情况下必须使用StringBuffer。</p><p>速度：StringBuilder&gt;StringBuffer&gt;String</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> java基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>mysql引擎</title>
       <link href="/2022/09/15/mysql%E5%BC%95%E6%93%8E/"/>
       <url>/2022/09/15/mysql%E5%BC%95%E6%93%8E/</url>
@@ -221,6 +196,31 @@
         <tags>
             
             <tag> 数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>String,StringBuilder,StringBuffer</title>
+      <link href="/2022/09/15/String,StringBuilder,StringBuffer/"/>
+      <url>/2022/09/15/String,StringBuilder,StringBuffer/</url>
+      
+        <content type="html"><![CDATA[<p>区别：</p><a id="more"></a><p><strong>1，是否可变</strong></p><p>String对象创建后，一旦初始化就不能修改，因为String类中的所有数据都是常量。对String类的任何改变，都返回一个新的String类对象，效率低，浪费内存空间。</p><p>StringBuilder和StringBuffer的对象是可变的。</p><p>StringBuilder：是在Java5中被提出来的。StringBuilder是一个可变的字符序列，可以用append()方法进行对字符串的追加，insert()插入，StringBuilder的原理和StringBuffer一样，但是线程是不安全的。</p><p>StringBuffer：StringBuffer是使用缓冲区的，本身也是操作字符串，但与String类不同，String类中的内容一旦声明就无法改变，改变的只是其内存地址的指向。但是StringBuffer中的内存是可以改变的。append()追加方法，reverse()反转，replace()代替，delete()删除，insert()插入。</p><p><strong>2，构造</strong></p><p>String类是引用数据类型</p><p>StringBuilder和StringBuffer本身是一个具体的操作类，所以不能像String那样用直接赋值的方法进行对象实例化，必须要通过构造方法来完成。（为了获得更好性能，在构造StringBuilder和StringBuffer时要指定其容量，当不指定容量时会默认构造一个容量为16的对象）</p><p><strong>3，线程与速度</strong></p><p>StringBuilder在大多数实现中比StringBuffer快，将StringBuilder用于多个线程是不安全的（不能同步访问），但是在单个线程里StringBuilder比StringBuffer性能好。</p><p>StringBuffer线程是安全的。</p><p>StringBuilder相对于StringBuffer有速度优势，所以一般情况下推荐使用StringBuilder，但是在程序要求线程安全的情况下必须使用StringBuffer。</p><p>速度：StringBuilder&gt;StringBuffer&gt;String</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java基础 </tag>
             
         </tags>
       
@@ -780,9 +780,9 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> 假期学习 </tag>
+            
+            <tag> java </tag>
             
         </tags>
       
