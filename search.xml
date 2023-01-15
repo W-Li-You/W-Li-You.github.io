@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>背包问题</title>
+      <link href="/2023/01/15/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+      <url>/2023/01/15/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>        给你一个整数数组 coins ，表示不同面额的硬币；以及一个整数 amount ，表示总金额。</p><p>计算并返回可以凑成总金额所需的 最少的硬币个数 。如果没有任何一种硬币组合能组成总金额，返回 -1 。</p><a id="more"></a><p>你可以认为每种硬币的数量是无限的。</p><p>示例 1：</p><p>输入：coins = [1, 2, 5], amount = 11<br>输出：3<br>解释：11 = 5 + 5 + 1<br>示例 2：</p><p>输入：coins = [2], amount = 3<br>输出：-1<br>示例 3：</p><p>输入：coins = [1], amount = 0<br>输出：0</p><p>链接：<a href="https://leetcode.cn/problems/coin-change">https://leetcode.cn/problems/coin-change</a></p><p>思路：</p><p>我们采用自下而上的方式进行思考。仍定义 F(i)F(i) 为组成金额 ii 所需最少的硬币数量，假设在计算 F(i)F(i) 之前，我们已经计算出 F(0)-F(i-1)F(0)−F(i−1) 的答案。 则 F(i)F(i) 对应的转移方程应为</p><p><img src="https://appdocs.wpscdn.cn/api/v3/office/copy/QkNuTjJ6VGZLakFZbnA5dkVKNTdyV2dTNzRpNTR5Z2lJdmN5MWJ3bTJJTjArQ2pGTW43YjFrWi8rRUx4RGVtaFJINWJnaEFuQWxYTzVXekJ0a2lmd1kvTGhlMVBGZzM3OUFsOGRrb1pFclRsZG5yZWFLaWVnYmNnSUFxK0RIajhCQ1NWamxVRXo2OC9POW9xaStoWkh3WGFFMHVMc045Q0wzc01oNDVkZEV5YlNTODlseFlZS1VoV2Z2WE1OazVzVWVvL2U3QXpQTFo5Z0oxbHh0SmJkN1hKV29zcGNWdFF1SjZ3Z3lUbnZsWTRlMEtUYW95WUJvK1Y1bFl6MGdPMzRweEsyQjg1b0FocnVVV1Y5bFkwRE9wVlhuYjZxbDRicGNqY1J0RkFnZVRuRi9ranEzZFFsK1lBdjEyRQ==/attach/object/VEVNMAYATU" alt="img"></p><p>其中 cj代表的是第 j 枚硬币的面值，即我们枚举最后一枚硬币面额是 cj，那么需要从 i-cjj这个金额的状态 F(i-cj) 转移过来，再算上枚举的这枚硬币数量 1 的贡献，由于要硬币数量最少，所以 F(i)为前面能转移过来的状态的最小值加上枚举的硬币数量 1 。</p><p>代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">coinChange</span><span class="params">(<span class="type">int</span>[] coins, <span class="type">int</span> amount)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> amount + <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span>[] dp = <span class="keyword">new</span> <span class="title class_">int</span>[amount + <span class="number">1</span>];</span><br><span class="line">        Arrays.fill(dp, max);</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= amount; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; coins.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (coins[j] &lt;= i) &#123;</span><br><span class="line">                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[amount] &gt; amount ? -<span class="number">1</span> : dp[amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 假期学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>全排列（算法）</title>
       <link href="/2022/12/11/%E5%85%A8%E6%8E%92%E5%88%97%EF%BC%88%E7%AE%97%E6%B3%95%EF%BC%89/"/>
       <url>/2022/12/11/%E5%85%A8%E6%8E%92%E5%88%97%EF%BC%88%E7%AE%97%E6%B3%95%EF%BC%89/</url>
