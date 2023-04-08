@@ -4,7 +4,32 @@
   
     
     <entry>
-      <title>并发-共享模型之内存</title>
+      <title>并发-Java并发机制的底层实现原理</title>
+      <link href="/2023/04/08/%E5%B9%B6%E5%8F%91_Java%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6%E7%9A%84%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
+      <url>/2023/04/08/%E5%B9%B6%E5%8F%91_Java%E5%B9%B6%E5%8F%91%E6%9C%BA%E5%88%B6%E7%9A%84%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h1><p>它在多处理器开发中保证了共享变量的“可见性”。</p><p>可见性的意思是当一个线程修改一个共享变量时，另一个线程可以读到这个修改的值。</p><p>volatile比synchronized的使用和执行成本更低，因为它不会引起线程上下文切换和调度。</p><h3 id="volatile实现原理："><a href="#volatile实现原理：" class="headerlink" title="volatile实现原理："></a><strong>volatile实现原理：</strong></h3><p>在生成汇编代码时会在volatile变量修饰的共享变量进行写操作的时候会多出Lock前缀的指令。Lock前缀的指令在多核处理器下会引发两件事情：</p><p>（1）将当前处理器的缓存行的数据写回到系统内存。</p><p>（2）这个写回内存的操作会使在其他CPU里缓存了该内存地址的数据无效。</p><p>多处理器下，为了保证各个处理器的缓存是一致的，就会实现缓存一致协议，每个处理器通过嗅探在总线上传播的数据来检查自己的缓存的值是不是过期了，当处理器发现自己缓存行对应的内存地址被修改，就会将当前处理器的缓存行设置成无效状态，当处理器对这个数据进行修改操作的时候，就会重新从系统内存读取数据到处理器缓存里。</p><p><strong>volatile两条实现原则：</strong></p><p>（1）Lock前缀指令会引起处理器缓存回写到内存。</p><p>（2）一个处理器的缓存回写到内存会导致其他处理器的缓存无效。</p><h3 id="volatile的使用优化："><a href="#volatile的使用优化：" class="headerlink" title="volatile的使用优化："></a><strong>volatile的使用优化：</strong></h3><p>著名Java并发编程大师Doug lea在JDK7的并发包里新增一个队列集合类linkedTransferQueue，它在使用volatile变量时，用一种追加字节的方式来优化队列出队和入队的性能。</p><p>内部类PaddedAtomicReference相对于父类AtomicReference只做了一件事情，就是将共享变量追加到64字节。</p><p><strong>为什么追加到64字节能够提高并发编程的效率呢？</strong></p><p>很多处理器的L1，L2或L3缓存的高速缓存行是64个字节宽，不支持填充缓存行。如果队列的头节点和尾节点都不足64字节的话，处理器会将它们都读取到同一个高速缓存行中。当一个处理器试图修改头节点时，会将整个缓存行锁定，那么在缓存一致性机制的作用下，会导致其他处理器不能访问自己高速缓存中的尾节点。而队列的入队和出队操作则需要不停修改头节点和尾节点。所以在多处理器的情况下会严重影响到队列的入队和出队效率。Doug lea使用追加到64字节的方式来填满高速缓冲区的缓存行，避免头节点和尾节点加载到同一缓存行，使头、尾节点在修改时不会互相锁定。</p><p><strong>在什么情况下使用volatile时不应该追加到64字节？</strong></p><p>（1）缓存行非64字节宽的处理器。</p><p>（2）共享变量不会被频繁地写。</p><h1 id="synchronized"><a href="#synchronized" class="headerlink" title="synchronized"></a>synchronized</h1><p>对于普通同步方法，锁是当前实例对象。</p><p>对于静态同步方法，锁是当前类的Class对象。</p><p>对于同步方法块，锁是Synchronized括号里配置的对象。</p><h3 id="Java对象头："><a href="#Java对象头：" class="headerlink" title="Java对象头："></a><strong>Java对象头：</strong></h3><p>synchronized用的锁是存在Java对象头里的。</p><p>Java对象头里的Mark Word里默认存储对象的HashCode、分代年龄和锁标记位。</p><p><strong>Mark Word</strong></p><p>32位JVM的Mark Word的默认存储结构。</p><table><thead><tr><th>锁状态</th><th>25bit</th><th>4bit</th><th>1bit是否是偏向锁</th><th>2bit锁标志位</th></tr></thead><tbody><tr><td>无锁状态</td><td>对象的HashCode</td><td>对象分代年龄</td><td>0</td><td>01</td></tr></tbody></table><p>运行期间，Mark Word里存储的数据会随着锁标志位的变化而变化。Mark Word可能变化为存储以下4种数据。</p><table><thead><tr><th>锁状态</th><th>25bit</th><th></th><th>4bit</th><th>1bit</th><th>2bit</th></tr></thead><tbody><tr><td></td><td>23bit</td><td>2bit</td><td></td><td>是否是偏向锁</td><td>锁标志位</td></tr><tr><td>轻量级锁</td><td>指向栈中-</td><td>锁-</td><td>记录的</td><td>指针</td><td>00</td></tr><tr><td>重量级锁</td><td>指向-</td><td>互斥量-</td><td>（重量级锁）的</td><td>指针</td><td>10</td></tr><tr><td>GC标记</td><td>空-</td><td>-</td><td></td><td></td><td>11</td></tr><tr><td>偏向锁</td><td>线程ID</td><td>Epoch</td><td>对象分代年龄</td><td>1</td><td>01</td></tr></tbody></table><p>64位虚拟机，MarkWord是64bit大小的，其存储结构如表。</p><table><thead><tr><th>锁状态</th><th>25bit</th><th>31bit</th><th>1bit</th><th>4bit</th><th>1bit</th><th>2bit</th></tr></thead><tbody><tr><td></td><td></td><td></td><td>cms_free</td><td>分代年龄</td><td>偏向锁</td><td>锁标志位</td></tr><tr><td>无锁</td><td>unused</td><td>hashCode</td><td></td><td></td><td>0</td><td>01</td></tr><tr><td>偏向锁</td><td>Thread(54-</td><td>bit)Epoch(2bit)</td><td></td><td></td><td>1</td><td>01</td></tr></tbody></table><h3 id="偏向锁和轻量级锁："><a href="#偏向锁和轻量级锁：" class="headerlink" title="偏向锁和轻量级锁："></a>偏向锁和轻量级锁：</h3><p>Java SE 1.6为了减少获得锁和释放锁带来的性能消耗，引入了”偏向锁“和”轻量级锁“。</p><p>在Java SE 1.6种，锁一共有4种状态，级别低到高：无锁状态、偏向锁状态、轻量级锁状态和重量级锁状态。</p><p>锁可以升级但不能降级，目的是为了提高获得锁和释放锁的效率。</p><p><strong>偏向锁的获取</strong></p><p>当一个线程访问同步块并获得锁时，会在对象头和栈帧中的锁记录里存储锁偏向的线程ID，以后该线程在进入和退出同步块时不需要进行CAS操作来加锁和解锁，只需简单地测试一下对象头的Mark Word里是否存储着指向当前线程的偏向锁。如果测试成功，表示线程已经获得了锁。如果测试失败，则需要再测试一下Mark Word中偏向锁的标识是否设置成1（表示当前是偏向锁）：如果没有设置，则使用CAS竞争锁；如果设置了，则尝试使用CAS将对象的偏向锁指向当前线程。</p><p><strong>偏向锁的撤销</strong></p><p>偏向锁使用了一种等到竞争出现才释放锁的机制，所以当其他线程尝试竞争偏向锁时，持有偏向锁的线程才会释放锁。偏向锁的撤销，需要等到全局安全点（在这个时间点上没有正在执行的字节码）。它会首先暂停拥有偏向锁的线程，然后检查持有偏向锁的线程是否活着，如果线程不处于活动状态，则将对象头设置成无锁状态；如果线程仍然活着，拥有偏向锁的栈会被执行，遍历偏向对象的锁记录，栈中的锁记录和对象头的Mark Word要么重新偏向于其他线程，要么恢复到无锁或者标记对象不适合作为偏向锁，最后唤醒暂停的线程。</p><p><strong>关闭偏向锁</strong></p><p>偏向锁在Java6和Java7中里是默认启用的，它在应用程序启动几秒钟后才激活。</p><p>JVM参数关闭延迟：-XX:BiasedLockingStartupDelay=0。</p><p>JVM参数关闭偏向锁：-XX:UseBiasedLocking=false。</p><p><strong>轻量级锁加锁</strong></p><p>线程在执行同步块之前，JVM会先在当前线程的栈帧中创建用于存储锁记录的空间，并将对象头中的Mark Word复制到锁记录中。然后线程尝试使用CAS将对象头中的Mark Word替换为指向锁记录的指针。如果成功，当前线程获得锁，如果失败，表示其他线程竞争锁，当前线程便尝试使用自旋来获取锁。</p><p><strong>轻量级锁解锁</strong></p><p>轻量级解锁时，会使用原子的CAS操作将DIsplaced Mark Word替换回到对象头，如果成功，则表示没有竞争发生。如果失败，表示当前锁存在竞争，锁就会膨胀成重量级锁。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 并发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>并发-并发编程的挑战</title>
       <link href="/2023/04/02/%E5%B9%B6%E5%8F%91_%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/"/>
       <url>/2023/04/02/%E5%B9%B6%E5%8F%91_%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/</url>
       
