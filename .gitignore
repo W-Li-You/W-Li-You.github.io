@@ -1,0 +1,6 @@
+.deploy_git/
+node_modules/
+db.json
+public/
+.idea/
+.DS_Store
