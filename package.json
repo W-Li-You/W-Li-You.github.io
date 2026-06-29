@@ -18,7 +18,7 @@
     "hexo-bilibili-bangumi": "^1.8.8",
     "hexo-butterfly-swiper": "^1.0.12",
     "hexo-clean-css": "^2.0.0",
-    "hexo-deployer-git": "^3.0.0",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-douban": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
