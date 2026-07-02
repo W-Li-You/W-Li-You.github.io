@@ -942,6 +942,31 @@
     
     
     <entry>
+      <title>MySQL 日志</title>
+      <link href="//2023/05/23/mysql-ri-zhi/"/>
+      <url>//2023/05/23/mysql-ri-zhi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、日志"><a href="#一、日志" class="headerlink" title="一、日志"></a>一、日志</h1><h2 id="（1）错误日志"><a href="#（1）错误日志" class="headerlink" title="（1）错误日志"></a>（1）错误日志</h2><p>错误日志时MySQL中最重要的日志之一，它记录了mysqld启动和停止时，以及服务器再运行过程中发生任何严重错误时的相关信息。当数据库出现任何故障导致无法正常使用时，建议首先查看此日志。</p><p>该日志时默认开启的，默认存放目录/var/log/，默认的日志文件名为mysqld.log。查看日志位置：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_error%&#x27;</span> </span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（2）二进制日志"><a href="#（2）二进制日志" class="headerlink" title="（2）二进制日志"></a>（2）二进制日志</h2><p>二进制日志（BINLOG）记录了所有的DDL语句和DML语句，但不包括数据查询语句（SELECT、SHOW）。</p><p>作用：</p><p>（1）灾难时的数据恢复</p><p>（2）MySQL的主从复制</p><p>在MySQL8版本中，默认二进制日志时开启着的：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_bin%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><table><thead><tr><th>日志格式</th><th>含义</th></tr></thead><tbody><tr><td>STATEMENT</td><td>基于SQL语句的日志记录，记录的是SQL语句，对数据进行修改的SQL都会记录在日志文件中。</td></tr><tr><td>ROW</td><td>基于行的日志记录，记录的是每一行的数据变更。（默认）</td></tr><tr><td>MIXED</td><td>混合了STATEMENT和ROW两种格式，默认采用STATEMENT，在某些特殊情况下会自动切换为ROW进行记录。</td></tr></tbody></table><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_format%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><strong>日志查看</strong></p><p>由于日志是以二进制方式存储的，不能直接读取，需要通过二进制日志查询工具mysqlbinlog来查看：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqlbinlog [参数选项] logfilename</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>参数选项：</p><p>-d 指定数据库名称，只列除指定的数据库相关操作。</p><p>-o 忽略掉日志中的前n行命令。</p><p>-v 将行事件（数据变更）重构为SQL语句。</p><p>-w 将行事件（数据变更）重构为SQL语句，并输出注释信息。</p><p><strong>日志删除</strong></p><p>对于比较繁忙的业务系统，每天生成的binlog数据巨大，如果长时间不清除，将会占用大量磁盘空间。</p><table><thead><tr><th>指令</th><th>含义</th></tr></thead><tbody><tr><td>reset master</td><td>删除全部binlog日志，删除之后，日志编号，将从binlog.000001重新开始</td></tr><tr><td>purge master logs to ‘binlog.xxxxxx’</td><td>删除xxxxxx编号之前的所有日志</td></tr><tr><td>purge master logs before ‘yyyy-mm-dd hh24:mi:ss’</td><td>删除日志为”yyyy-mm-dd hh24:mi:ss”之前产生的所有日志</td></tr></tbody></table><p>可以在mysql的配置文件中配置二进制日志的过期时间，设置之后，二进制日志过期会自动删除（默认30天）</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_expire_logs_seconds%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（3）查询日志"><a href="#（3）查询日志" class="headerlink" title="（3）查询日志"></a>（3）查询日志</h2><p>查询日志中记录了客户端的所有操作，而二进制日志不包含查询数据的SQL语句。默认情况下，查询日志是不开启的。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%general%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>修改配置文件开启查询日志：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改MySQL的配置文件<span class="operator">/</span>ect<span class="operator">/</span>my.cnf文件，添加如下内容</span><br><span class="line">general_log<span class="operator">=</span><span class="number">1</span>   #开启查询日志，<span class="number">0</span>关闭，<span class="number">1</span>开启</span><br><span class="line">general_log_file<span class="operator">=</span>mysql_query.log    #设置日志文件名，默认host_name.log</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（4）慢查询日志"><a href="#（4）慢查询日志" class="headerlink" title="（4）慢查询日志"></a>（4）慢查询日志</h2><p>慢查询日志记录了所有执行时间超过指定参数（long_query_time，默认10s）的所有SQL语句的日志。</p><p>SHOW VARIABLES LIKE ‘slow_query_log’; MySQL的慢查询日志是默认不开启的，需要在MySQL的配置文件（/ect/my.cnf）中配置如下信息：</p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e661d2c2f6fe4160b1fa02227e46a812.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p><p> 配置完毕之后，重新启动MySQL服务器进行测试，查看慢日志文件中记录的信息：/var/lib/mysql/localhost-slow.log。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>打家劫舍（动态规划）</title>
       <link href="//2023/05/23/da-jia-jie-she-wen-ti-suan-fa/"/>
       <url>//2023/05/23/da-jia-jie-she-wen-ti-suan-fa/</url>
@@ -961,31 +986,6 @@
             <tag> 算法 </tag>
             
             <tag> 动态规划 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MySQL 日志</title>
-      <link href="//2023/05/23/mysql-ri-zhi/"/>
-      <url>//2023/05/23/mysql-ri-zhi/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、日志"><a href="#一、日志" class="headerlink" title="一、日志"></a>一、日志</h1><h2 id="（1）错误日志"><a href="#（1）错误日志" class="headerlink" title="（1）错误日志"></a>（1）错误日志</h2><p>错误日志时MySQL中最重要的日志之一，它记录了mysqld启动和停止时，以及服务器再运行过程中发生任何严重错误时的相关信息。当数据库出现任何故障导致无法正常使用时，建议首先查看此日志。</p><p>该日志时默认开启的，默认存放目录/var/log/，默认的日志文件名为mysqld.log。查看日志位置：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_error%&#x27;</span> </span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（2）二进制日志"><a href="#（2）二进制日志" class="headerlink" title="（2）二进制日志"></a>（2）二进制日志</h2><p>二进制日志（BINLOG）记录了所有的DDL语句和DML语句，但不包括数据查询语句（SELECT、SHOW）。</p><p>作用：</p><p>（1）灾难时的数据恢复</p><p>（2）MySQL的主从复制</p><p>在MySQL8版本中，默认二进制日志时开启着的：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_bin%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><table><thead><tr><th>日志格式</th><th>含义</th></tr></thead><tbody><tr><td>STATEMENT</td><td>基于SQL语句的日志记录，记录的是SQL语句，对数据进行修改的SQL都会记录在日志文件中。</td></tr><tr><td>ROW</td><td>基于行的日志记录，记录的是每一行的数据变更。（默认）</td></tr><tr><td>MIXED</td><td>混合了STATEMENT和ROW两种格式，默认采用STATEMENT，在某些特殊情况下会自动切换为ROW进行记录。</td></tr></tbody></table><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_format%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><strong>日志查看</strong></p><p>由于日志是以二进制方式存储的，不能直接读取，需要通过二进制日志查询工具mysqlbinlog来查看：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqlbinlog [参数选项] logfilename</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>参数选项：</p><p>-d 指定数据库名称，只列除指定的数据库相关操作。</p><p>-o 忽略掉日志中的前n行命令。</p><p>-v 将行事件（数据变更）重构为SQL语句。</p><p>-w 将行事件（数据变更）重构为SQL语句，并输出注释信息。</p><p><strong>日志删除</strong></p><p>对于比较繁忙的业务系统，每天生成的binlog数据巨大，如果长时间不清除，将会占用大量磁盘空间。</p><table><thead><tr><th>指令</th><th>含义</th></tr></thead><tbody><tr><td>reset master</td><td>删除全部binlog日志，删除之后，日志编号，将从binlog.000001重新开始</td></tr><tr><td>purge master logs to ‘binlog.xxxxxx’</td><td>删除xxxxxx编号之前的所有日志</td></tr><tr><td>purge master logs before ‘yyyy-mm-dd hh24:mi:ss’</td><td>删除日志为”yyyy-mm-dd hh24:mi:ss”之前产生的所有日志</td></tr></tbody></table><p>可以在mysql的配置文件中配置二进制日志的过期时间，设置之后，二进制日志过期会自动删除（默认30天）</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_expire_logs_seconds%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（3）查询日志"><a href="#（3）查询日志" class="headerlink" title="（3）查询日志"></a>（3）查询日志</h2><p>查询日志中记录了客户端的所有操作，而二进制日志不包含查询数据的SQL语句。默认情况下，查询日志是不开启的。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%general%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>修改配置文件开启查询日志：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改MySQL的配置文件<span class="operator">/</span>ect<span class="operator">/</span>my.cnf文件，添加如下内容</span><br><span class="line">general_log<span class="operator">=</span><span class="number">1</span>   #开启查询日志，<span class="number">0</span>关闭，<span class="number">1</span>开启</span><br><span class="line">general_log_file<span class="operator">=</span>mysql_query.log    #设置日志文件名，默认host_name.log</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（4）慢查询日志"><a href="#（4）慢查询日志" class="headerlink" title="（4）慢查询日志"></a>（4）慢查询日志</h2><p>慢查询日志记录了所有执行时间超过指定参数（long_query_time，默认10s）的所有SQL语句的日志。</p><p>SHOW VARIABLES LIKE ‘slow_query_log’; MySQL的慢查询日志是默认不开启的，需要在MySQL的配置文件（/ect/my.cnf）中配置如下信息：</p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e661d2c2f6fe4160b1fa02227e46a812.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p><p> 配置完毕之后，重新启动MySQL服务器进行测试，查看慢日志文件中记录的信息：/var/lib/mysql/localhost-slow.log。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> MySQL </tag>
             
         </tags>
       
@@ -1264,9 +1264,9 @@
       
         <tags>
             
-            <tag> 面试 </tag>
-            
             <tag> JVM </tag>
+            
+            <tag> 面试 </tag>
             
         </tags>
       
@@ -1599,6 +1599,31 @@
     
     
     <entry>
+      <title>MySQL 存储引擎</title>
+      <link href="//2022/09/15/mysql-yin-qing/"/>
+      <url>//2022/09/15/mysql-yin-qing/</url>
+      
+        <content type="html"><![CDATA[<p><strong>常用的mysql引擎：MyISAM、InnoDB、Memory。</strong></p><a id="more"></a><p>MyISAM：MyISAM是mysql5.5之前的默认引擎。不支持事务，只支持表锁，不支持行锁。但是访问速度快。如果操作主要以读取和插入为主，修改和删除的操作很少，对数据的并发性和完整性要求并不是很强的情况下可以用该引擎，比如用户日志，评论等。</p><p>InnoDB：mysql5.5之后的默认引擎。支持事务和行锁，支持外键。是一种兼顾高可靠性和高性能的通用存储引擎。如果应用对事务的完整性有比较高的要求，在并发条件下要求数据的一致性，数据操作除了插入和查询之外，包含很多更新、删除操作，那么innodb是比较合适的选择。（B-Tree索引）</p><p>Memory：Memory是在内存中存储所有的数据。由于受到硬件的问题、或断电问题的影响，只能将这些表作为临时表或缓存使用。（Hash索引）</p><p><strong>查看数据库是否支持引擎：</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> ENGINES ;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e8d45acb76514a03bab54c4cd9c9a334.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>suport：是否支持引擎（default是默认引擎）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>String、StringBuilder 与 StringBuffer 的区别</title>
       <link href="//2022/09/15/string-stringbuilder-stringbuffer/"/>
       <url>//2022/09/15/string-stringbuilder-stringbuffer/</url>
@@ -1618,31 +1643,6 @@
             <tag> Java基础 </tag>
             
             <tag> 字符串 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MySQL 存储引擎</title>
-      <link href="//2022/09/15/mysql-yin-qing/"/>
-      <url>//2022/09/15/mysql-yin-qing/</url>
-      
-        <content type="html"><![CDATA[<p><strong>常用的mysql引擎：MyISAM、InnoDB、Memory。</strong></p><a id="more"></a><p>MyISAM：MyISAM是mysql5.5之前的默认引擎。不支持事务，只支持表锁，不支持行锁。但是访问速度快。如果操作主要以读取和插入为主，修改和删除的操作很少，对数据的并发性和完整性要求并不是很强的情况下可以用该引擎，比如用户日志，评论等。</p><p>InnoDB：mysql5.5之后的默认引擎。支持事务和行锁，支持外键。是一种兼顾高可靠性和高性能的通用存储引擎。如果应用对事务的完整性有比较高的要求，在并发条件下要求数据的一致性，数据操作除了插入和查询之外，包含很多更新、删除操作，那么innodb是比较合适的选择。（B-Tree索引）</p><p>Memory：Memory是在内存中存储所有的数据。由于受到硬件的问题、或断电问题的影响，只能将这些表作为临时表或缓存使用。（Hash索引）</p><p><strong>查看数据库是否支持引擎：</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> ENGINES ;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e8d45acb76514a03bab54c4cd9c9a334.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>suport：是否支持引擎（default是默认引擎）</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> MySQL </tag>
             
         </tags>
       
@@ -2383,11 +2383,11 @@
     
     
     <entry>
-      <title>看似不起眼的日复一日，会在将来的某一天，突然让你看到坚持的意义</title>
-      <link href="/friends/index.html"/>
-      <url>/friends/index.html</url>
+      <title>bangumis</title>
+      <link href="/bangumis/index.html"/>
+      <url>/bangumis/index.html</url>
       
-        <content type="html"><![CDATA[<div class="site-card-group">    <a class="site-card" href="https://gulingc.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/QQ%E5%9B%BE%E7%89%8720230720113944.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/53341353DC33417CD7CE15B2EC9D9766.jpg"/><span class="title">林南而瑜</span><span class="desc">林南而瑜，不期而遇</span></div></a>    <a class="site-card" href="https://qmlmood.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/%7D~%7B%5D%25%29%28S%60Q%28%28PB_VCF%5D2RVG.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://pic4.zhimg.com/80/v2-45eb5749949e7f90a5c788f9bc5721ef_1440w.jpg"/><span class="title">Mood</span><span class="desc">小甲子的博客</span></div></a>    <a class="site-card" href="http://www.wall-e.icu/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/9222af785e9ea40034b8fe6fd4b4e5d2.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/f47eaedf2a15f1f146ab382d9858206a.jpg"/><span class="title">是小靳的~</span><span class="desc">欲买桂花同载酒，终不似少年游</span></div></a>    <a class="site-card" href="https://www.keeplover.top/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/index.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/avatar.jpg"/><span class="title">逐渐呆滞</span><span class="desc">快了，快了，快要找到了……</span></div></a>​<a class="site-card" href="https://www.zhaozihao.love/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.zhaozihao.love//image/wallhaven-jx13zp_1920x1080.png"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/test/fWagzr4qJDKn8E9.jpg"/><span class="title">赵子豪</span><span class="desc">茜茜在哪，我要找茜茜</span></div></a>​<a class="site-card" href="https://www.lovelsj.com/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src=" https://img.lovelsj.com/articles/0bee7ba5ac70155766648e14ae2a821f.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img.lovelsj.com/articles/QQ%E5%9B%BE%E7%89%8720220905144438.jpg"/><span class="title">瓜兮兮的男孩</span><span class="desc">五层血怒爆杀力扣</span></div></a></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -2398,18 +2398,7 @@
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h1><p>姓名: 李孟瑶  |  年龄：20  |  学历：本科  |  邮箱：<a href="mailto:&#119;&#45;&#108;&#105;&#x2d;&#x79;&#111;&#117;&#64;&#x66;&#x6f;&#120;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#119;&#45;&#108;&#105;&#x2d;&#x79;&#111;&#117;&#64;&#x66;&#x6f;&#120;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a></p><h2 id="我的账号"><a href="#我的账号" class="headerlink" title="我的账号"></a>我的账号</h2><div style="display: flex;"><span class='btn center cool-2'><a class="button" href='https://blog.csdn.net/Alingte7' title='csdn'><i class='fa-solid fa-keyboard'></i>csdn</a></span><span style="width:5px;"></span><span class='btn center cool-2'><a class="button" href='https://codeforces.com/profile/W_Li_You' title='Codeforces'><i class='fa-solid fa-pencil'></i>Codeforces</a></span><span style="width:5px;"></span><span class='btn center cool-2'><a class="button" href='https://ac.nowcoder.com/acm/contest/profile/753873397' title='牛客'><i class='fa-solid fa-keyboard'></i>牛客</a></span><span style="width:5px;"></span><span class='btn center cool-2'><a class="button" href='https://leetcode.cn/u/zha-bi-xiao-xin-yan-zi-d/' title='力扣'><i class='fa-solid fa-pencil'></i>力扣</a></span></div><h2 id="我的技能"><a href="#我的技能" class="headerlink" title="我的技能"></a>我的技能</h2><div class='checkbox'><input type="radio" />            <p><strong>Java：</strong>熟悉Java 基础技术 ，熟悉集合，熟悉JVM内存模型及GC过程、JMM概念。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>框架：</strong>熟悉Spring、SpringMVC、Mybatis、Mybatis-plus、SpringBoot开发框架及SpringSecurity安全框架，并有一定开发经验。熟悉分布式框架SpringCloud，了解Nacos、RabbitMQ等中间件的使用。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>数据库：</strong>熟悉MySQL数据库及SQL优化，了解索引原理及数据库分库分表技术。熟悉Redis缓存中间件，能够使用Redis实现分布式锁，了解Redis持久化机制，哨兵机制。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>数据结构：</strong>熟悉常见的数据结构和算法，如十大排序算法以及链表和数组、栈与队列、二叉树等数据结构。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>并发：</strong>熟悉Java并发编程、synchronized和volatie、线程池。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>工具：</strong>熟悉使用Git版本管理工具、Maven、ApiFox等。</p>            </div><h2 id="我的项目"><a href="#我的项目" class="headerlink" title="我的项目"></a>我的项目</h2><div class="link-group"><div class="tagLink"><a class="link-card" title="项目一" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目一"/></div><div class="right"><p class="text">项目一</p><p class="url">http://www.baidu.com</p></div></a></div><div class="tagLink"><a class="link-card" title="项目二" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目二"/></div><div class="right"><p class="text">项目二</p><p class="url">http://www.baidu.com</p></div></a></div><div class="tagLink"><a class="link-card" title="项目三" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目三"/></div><div class="right"><p class="text">项目三</p><p class="url">http://www.baidu.com</p></div></a></div><div class="tagLink"><a class="link-card" title="项目四" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目四"/></div><div class="right"><p class="text">项目四</p><p class="url">http://www.baidu.com</p></div></a></div></div><h2 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a><strong>教育经历</strong></h2><p>2021.09-至今                计算机科学与技术（统招一本，1%~5%）                河南科技学院</p><p><strong>主修课程</strong>：数据结构、计算机组成原理、操作系统、算法设计与分析、电子技术基础等。</p><h2 id="校内经历"><a href="#校内经历" class="headerlink" title="校内经历"></a>校内经历</h2><p><strong>未来软件工作室</strong>                     后端负责人                 2021.10~至今</p><div class="note "><p>大一加入了院长和老师共同创办的未来软件工作室，利用课余时间进行 Java 学习和项目开发。 大二多次主导软件项目开发，获得了三项软件著作权。参加蓝桥杯，并获得了国赛三等奖。 大三担任工作室的后端负责人，负责后端学习的规划和学科竞赛相关的事情，并参与了校企合作</p></div><h2 id="我的荣誉"><a href="#我的荣誉" class="headerlink" title="我的荣誉"></a>我的荣誉</h2><p>第十四届蓝桥杯 Java 软件开发国赛三等奖</p><p>第十四届蓝桥杯 Java 软件开发省赛一等奖</p><p>第十三届蓝桥杯 Java 软件开发省赛二等奖</p><h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a><strong>自我评价</strong></h2><p>沟通能力强，有优秀的团队合作能力，在校与同学多次合作进行项目开发。</p><p>有一定的自学能力，在校期间利用课外时间自学编程相关知识。</p><p>具有良好的抗压能力，能够在紧张的环境下保持较好的工作效率。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>bangumis</title>
-      <link href="/bangumis/index.html"/>
-      <url>/bangumis/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h1><p>姓名: 李孟瑶  |  年龄：20  |  学历：本科  |  邮箱：<a href="mailto:&#119;&#x2d;&#x6c;&#x69;&#45;&#x79;&#111;&#x75;&#64;&#x66;&#111;&#120;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#119;&#x2d;&#x6c;&#x69;&#45;&#x79;&#111;&#x75;&#64;&#x66;&#111;&#120;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a></p><h2 id="我的账号"><a href="#我的账号" class="headerlink" title="我的账号"></a>我的账号</h2><div style="display: flex;"><span class='btn center cool-2'><a class="button" href='https://blog.csdn.net/Alingte7' title='csdn'><i class='fa-solid fa-keyboard'></i>csdn</a></span><span style="width:5px;"></span><span class='btn center cool-2'><a class="button" href='https://codeforces.com/profile/W_Li_You' title='Codeforces'><i class='fa-solid fa-pencil'></i>Codeforces</a></span><span style="width:5px;"></span><span class='btn center cool-2'><a class="button" href='https://ac.nowcoder.com/acm/contest/profile/753873397' title='牛客'><i class='fa-solid fa-keyboard'></i>牛客</a></span><span style="width:5px;"></span><span class='btn center cool-2'><a class="button" href='https://leetcode.cn/u/zha-bi-xiao-xin-yan-zi-d/' title='力扣'><i class='fa-solid fa-pencil'></i>力扣</a></span></div><h2 id="我的技能"><a href="#我的技能" class="headerlink" title="我的技能"></a>我的技能</h2><div class='checkbox'><input type="radio" />            <p><strong>Java：</strong>熟悉Java 基础技术 ，熟悉集合，熟悉JVM内存模型及GC过程、JMM概念。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>框架：</strong>熟悉Spring、SpringMVC、Mybatis、Mybatis-plus、SpringBoot开发框架及SpringSecurity安全框架，并有一定开发经验。熟悉分布式框架SpringCloud，了解Nacos、RabbitMQ等中间件的使用。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>数据库：</strong>熟悉MySQL数据库及SQL优化，了解索引原理及数据库分库分表技术。熟悉Redis缓存中间件，能够使用Redis实现分布式锁，了解Redis持久化机制，哨兵机制。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>数据结构：</strong>熟悉常见的数据结构和算法，如十大排序算法以及链表和数组、栈与队列、二叉树等数据结构。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>并发：</strong>熟悉Java并发编程、synchronized和volatie、线程池。</p>            </div><div class='checkbox'><input type="radio" />            <p><strong>工具：</strong>熟悉使用Git版本管理工具、Maven、ApiFox等。</p>            </div><h2 id="我的项目"><a href="#我的项目" class="headerlink" title="我的项目"></a>我的项目</h2><div class="link-group"><div class="tagLink"><a class="link-card" title="项目一" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目一"/></div><div class="right"><p class="text">项目一</p><p class="url">http://www.baidu.com</p></div></a></div><div class="tagLink"><a class="link-card" title="项目二" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目二"/></div><div class="right"><p class="text">项目二</p><p class="url">http://www.baidu.com</p></div></a></div><div class="tagLink"><a class="link-card" title="项目三" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目三"/></div><div class="right"><p class="text">项目三</p><p class="url">http://www.baidu.com</p></div></a></div><div class="tagLink"><a class="link-card" title="项目四" href="http://www.baidu.com"><span class="link-card-backdrop" style="background-image: url(https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp)"></span><div class="left"><img class="no-lazy" src="https://pica.zhimg.com/80/v2-970dd5538f106dd6be064c4eafc01c36_1440w.webp" alt="项目四"/></div><div class="right"><p class="text">项目四</p><p class="url">http://www.baidu.com</p></div></a></div></div><h2 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a><strong>教育经历</strong></h2><p>2021.09-至今                计算机科学与技术（统招一本，1%~5%）                河南科技学院</p><p><strong>主修课程</strong>：数据结构、计算机组成原理、操作系统、算法设计与分析、电子技术基础等。</p><h2 id="校内经历"><a href="#校内经历" class="headerlink" title="校内经历"></a>校内经历</h2><p><strong>未来软件工作室</strong>                     后端负责人                 2021.10~至今</p><div class="note "><p>大一加入了院长和老师共同创办的未来软件工作室，利用课余时间进行 Java 学习和项目开发。 大二多次主导软件项目开发，获得了三项软件著作权。参加蓝桥杯，并获得了国赛三等奖。 大三担任工作室的后端负责人，负责后端学习的规划和学科竞赛相关的事情，并参与了校企合作</p></div><h2 id="我的荣誉"><a href="#我的荣誉" class="headerlink" title="我的荣誉"></a>我的荣誉</h2><p>第十四届蓝桥杯 Java 软件开发国赛三等奖</p><p>第十四届蓝桥杯 Java 软件开发省赛一等奖</p><p>第十三届蓝桥杯 Java 软件开发省赛二等奖</p><h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a><strong>自我评价</strong></h2><p>沟通能力强，有优秀的团队合作能力，在校与同学多次合作进行项目开发。</p><p>有一定的自学能力，在校期间利用课外时间自学编程相关知识。</p><p>具有良好的抗压能力，能够在紧张的环境下保持较好的工作效率。</p>]]></content>
       
     </entry>
     
@@ -2427,11 +2416,11 @@
     
     
     <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>看似不起眼的日复一日，会在将来的某一天，突然让你看到坚持的意义</title>
+      <link href="/friends/index.html"/>
+      <url>/friends/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="site-card-group">    <a class="site-card" href="https://gulingc.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/QQ%E5%9B%BE%E7%89%8720230720113944.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/53341353DC33417CD7CE15B2EC9D9766.jpg"/><span class="title">林南而瑜</span><span class="desc">林南而瑜，不期而遇</span></div></a>    <a class="site-card" href="https://qmlmood.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/%7D~%7B%5D%25%29%28S%60Q%28%28PB_VCF%5D2RVG.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://pic4.zhimg.com/80/v2-45eb5749949e7f90a5c788f9bc5721ef_1440w.jpg"/><span class="title">Mood</span><span class="desc">小甲子的博客</span></div></a>    <a class="site-card" href="http://www.wall-e.icu/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/9222af785e9ea40034b8fe6fd4b4e5d2.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/f47eaedf2a15f1f146ab382d9858206a.jpg"/><span class="title">是小靳的~</span><span class="desc">欲买桂花同载酒，终不似少年游</span></div></a>    <a class="site-card" href="https://www.keeplover.top/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/index.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/avatar.jpg"/><span class="title">逐渐呆滞</span><span class="desc">快了，快了，快要找到了……</span></div></a>​<a class="site-card" href="https://www.zhaozihao.love/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.zhaozihao.love//image/wallhaven-jx13zp_1920x1080.png"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/test/fWagzr4qJDKn8E9.jpg"/><span class="title">赵子豪</span><span class="desc">茜茜在哪，我要找茜茜</span></div></a>​<a class="site-card" href="https://www.lovelsj.com/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src=" https://img.lovelsj.com/articles/0bee7ba5ac70155766648e14ae2a821f.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img.lovelsj.com/articles/QQ%E5%9B%BE%E7%89%8720220905144438.jpg"/><span class="title">瓜兮兮的男孩</span><span class="desc">五层血怒爆杀力扣</span></div></a></div>]]></content>
       
     </entry>
     
@@ -2452,6 +2441,17 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
