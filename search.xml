@@ -2376,7 +2376,7 @@
       <link href="/sw.js"/>
       <url>/sw.js</url>
       
-        <content type="html"><![CDATA[self.addEventListener("install",(function(){self.skipWaiting()})),self.addEventListener("activate",(function(e){e.waitUntil(caches.keys().then((function(e){return Promise.all(e.map((function(e){return caches.delete(e)})))})).then((function(){return self.clients.claim()})))})),self.addEventListener("fetch",(function(e){e.respondWith(fetch(e.request))}));]]></content>
+        <content type="html"><![CDATA[self.addEventListener("install",(function(){self.skipWaiting()})),self.addEventListener("activate",(function(n){n.waitUntil(caches.keys().then((function(n){return Promise.all(n.map((function(n){return caches.delete(n)})))})).then((function(){return self.clients.matchAll({type:"window",includeUncontrolled:!0})})).then((function(n){n.forEach((function(n){n.navigate(n.url)}))})).then((function(){return self.registration.unregister()})))}));]]></content>
       
     </entry>
     
