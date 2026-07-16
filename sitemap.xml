@@ -2,6 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://w-li-you.github.io/2026/06/15/search-recommend-series-index/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/about/index.html</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2025/09/18/wang-huiwen-tsinghua-product-course/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2025/08/22/everyone-is-product-manager-notes/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/series/index.html</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2026/02/28/ranking-ltr-and-evaluation/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2025/12/15/query-understanding-and-recall/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2026/05/25/elasticsearch-search-basics/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2026/04/20/ab-testing-online-iteration/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2026/01/18/vector-search-ann/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2025/11/10/python-search-rec-stack/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2025/10/18/search-recommend-algorithm-basics/</loc>
+    
+    <lastmod>2026-07-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://w-li-you.github.io/2026/06/02/my-ai-coding-workflow/</loc>
     
     <lastmod>2026-07-05</lastmod>
@@ -39,24 +147,6 @@
   
   <url>
     <loc>https://w-li-you.github.io/2025/06/08/alibaba-java-coding-guidelines-1/</loc>
-    
-    <lastmod>2026-07-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/series/index.html</loc>
-    
-    <lastmod>2026-07-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/about/index.html</loc>
     
     <lastmod>2026-07-05</lastmod>
     
@@ -452,15 +542,6 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2022/03/13/yin-le-wang-zhan-kao-he-zong-jie-er/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://w-li-you.github.io/2022/03/06/yin-le-wang-zhan-kao-he-zong-jie/</loc>
     
     <lastmod>2026-06-30</lastmod>
@@ -479,16 +560,7 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2022/04/10/chu-shi-xiang-mu-zong-jie-yi/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/2022/04/17/xiang-mu-zong-jie-er/</loc>
+    <loc>https://w-li-you.github.io/2022/03/13/yin-le-wang-zhan-kao-he-zong-jie-er/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -506,7 +578,25 @@
   </url>
   
   <url>
+    <loc>https://w-li-you.github.io/2022/04/17/xiang-mu-zong-jie-er/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://w-li-you.github.io/2022/05/09/xiang-mu-kao-he-zong-jie/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2022/04/10/chu-shi-xiang-mu-zong-jie-yi/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -542,34 +632,16 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2022/01/16/zi-wo-zong-jie-wu/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/2022/02/13/han-jia-zong-jie-er/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/2022/02/20/han-jia-zong-jie-san/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://w-li-you.github.io/2021/12/12/zi-wo-zong-jie-san/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2022/01/16/zi-wo-zong-jie-wu/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -587,7 +659,7 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2022/02/26/mei-zhou-zong-jie/</loc>
+    <loc>https://w-li-you.github.io/2022/02/13/han-jia-zong-jie-er/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -597,6 +669,24 @@
   
   <url>
     <loc>https://w-li-you.github.io/2022/01/23/han-jia-zong-jie/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2022/02/20/han-jia-zong-jie-san/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2022/02/26/mei-zhou-zong-jie/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -722,7 +812,7 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2024/02/10/kafka-jian-jie/</loc>
+    <loc>https://w-li-you.github.io/2024/03/01/kafka-sheng-chan-zhe/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -731,7 +821,7 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2024/03/01/kafka-sheng-chan-zhe/</loc>
+    <loc>https://w-li-you.github.io/2024/02/10/kafka-jian-jie/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -776,15 +866,6 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2023/05/11/mysql-suo/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://w-li-you.github.io/2023/05/23/mysql-ri-zhi/</loc>
     
     <lastmod>2026-06-30</lastmod>
@@ -794,7 +875,7 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2022/11/27/ji-he-mian-shi-ti/</loc>
+    <loc>https://w-li-you.github.io/2023/05/11/mysql-suo/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -812,25 +893,7 @@
   </url>
   
   <url>
-    <loc>https://w-li-you.github.io/2023/03/01/jvm-la-ji-shou-ji-qi-yu-nei-cun-fen-pei-ce-lue/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/2023/03/26/juc/</loc>
-    
-    <lastmod>2026-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/2023/04/02/bing-fa-bing-fa-bian-cheng-de-tiao-zhan/</loc>
+    <loc>https://w-li-you.github.io/2022/11/27/ji-he-mian-shi-ti/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -840,6 +903,24 @@
   
   <url>
     <loc>https://w-li-you.github.io/2023/02/19/jvm-mian-shi-ti/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2023/03/01/jvm-la-ji-shou-ji-qi-yu-nei-cun-fen-pei-ce-lue/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2023/04/02/bing-fa-bing-fa-bian-cheng-de-tiao-zhan/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -858,6 +939,15 @@
   
   <url>
     <loc>https://w-li-you.github.io/2023/04/20/mysql-gao-ji-yi/</loc>
+    
+    <lastmod>2026-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/2023/03/26/juc/</loc>
     
     <lastmod>2026-06-30</lastmod>
     
@@ -949,7 +1039,7 @@
 
   <url>
     <loc>https://w-li-you.github.io/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -957,448 +1047,609 @@
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Spring/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/SpringBoot/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/PS/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/MyBatis/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/ORM/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Redis/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E5%88%86%E6%B2%BB%E6%B3%95/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/MySQL/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%88%86%E6%B2%BB%E6%B3%95/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%BA%90%E7%A0%81/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E9%9B%86%E5%90%88/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Java/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/JavaWeb/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/JVM/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/JVM/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%9B%9E%E6%BA%AF%E6%B3%95/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/EasyExcel/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E5%B7%A5%E5%85%B7%E5%BA%93/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/EasyExcel/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%B7%A5%E5%85%B7%E5%BA%93/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%B9%B6%E5%8F%91/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/JUC/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/XML/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/JSP/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/Kafka/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E8%A7%84%E8%8C%83/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/Kafka/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Elasticsearch/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/RocketMQ/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E5%8D%8E%E4%B8%BA/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%88%98%E7%95%A5/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E7%BE%8E%E5%9B%A2/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/Python/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/FastAPI/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/LightGBM/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%90%9C%E7%B4%A2/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%8D%8E%E4%B8%BA/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/Query%E7%90%86%E8%A7%A3/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%8F%AC%E5%9B%9E/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/BM25/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%90%91%E9%87%8F%E6%A3%80%E7%B4%A2/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/ANN/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/Embedding/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E4%BA%BA%E6%89%8D%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/AI%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Agent/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Spec-Coding/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E7%BB%A9%E6%95%88%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/LTR/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/LambdaMART/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/NDCG/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Claude-Code/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/Cursor/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E8%B4%A2%E7%BB%8F/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/AB%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E7%BA%BF%E4%B8%8A%E8%BF%AD%E4%BB%A3/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/IPD/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E6%A8%A1%E5%9E%8B%E9%80%89%E5%9E%8B/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%80%92%E6%8E%92%E7%B4%A2%E5%BC%95/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E5%88%86%E9%A1%B5/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://w-li-you.github.io/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/tags/%E7%B4%A2%E5%BC%95/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -1407,84 +1658,98 @@
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/Java/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/categories/%E4%BA%A7%E5%93%81/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://w-li-you.github.io/categories/%E6%90%9C%E6%8E%A8%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://w-li-you.github.io/categories/AI%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
