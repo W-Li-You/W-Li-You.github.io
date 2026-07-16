@@ -611,6 +611,33 @@
     
     
     <entry>
+      <title>《格鲁夫给经理人的第一课》读书笔记（三）：团队成熟度与管理风格</title>
+      <link href="//2026/02/08/grove-high-output-management-3/"/>
+      <url>//2026/02/08/grove-high-output-management-3/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本篇涵盖第五、六章：管理风格的弹性匹配，以及任务相关成熟度（Task-Relevant Maturity）。</p></blockquote><a id="more"></a><h2 id="五、任务相关成熟度（TRM）"><a href="#五、任务相关成熟度（TRM）" class="headerlink" title="五、任务相关成熟度（TRM）"></a>五、任务相关成熟度（TRM）</h2><p>这是本书最有实操价值的概念之一。格鲁夫指出，管理风格没有绝对的好坏，<strong>适合的才是最好的</strong>。决定管理风格的核心变量是：</p><blockquote><p><strong>任务相关成熟度（Task-Relevant Maturity, TRM）</strong><br>指下属在<strong>特定任务</strong>上的经验、能力和意愿，而非其整体能力水平。</p></blockquote><p>关键点：TRM 是<strong>任务相关的</strong>，不是人相关的。一个 10 年经验的工程师，在做一项全新技术方向的工作时，TRM 可能很低。</p><h3 id="三种管理风格对应三个-TRM-层级"><a href="#三种管理风格对应三个-TRM-层级" class="headerlink" title="三种管理风格对应三个 TRM 层级"></a>三种管理风格对应三个 TRM 层级</h3><table><thead><tr><th>TRM 水平</th><th>对应管理风格</th><th>核心做法</th></tr></thead><tbody><tr><td>低（新手/新任务）</td><td>结构化指令型</td><td>明确告知做什么、怎么做、检查节点</td></tr><tr><td>中（有基础但不稳定）</td><td>双向沟通型</td><td>共同讨论，解释原因，给予支持</td></tr><tr><td>高（熟练且自驱）</td><td>授权型</td><td>给目标，给资源，放手执行</td></tr></tbody></table><h3 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h3><ul><li><strong>对高 TRM 员工仍事无巨细</strong>：会让他们感到不被信任，产生挫败感，进而离职。</li><li><strong>对低 TRM 员工过度授权</strong>：等于把他扔进深水区，结果是失败和信心受损。</li></ul><p>在技术团队里，这个模型非常实用：新入职的校招生（低 TRM）需要详细的任务拆解；老员工接手陌生技术方向（中 TRM）需要一起讨论方案；核心老鸟（高 TRM）只需要给清楚目标和边界。</p><hr><h2 id="六、绩效评估：最难开口的对话"><a href="#六、绩效评估：最难开口的对话" class="headerlink" title="六、绩效评估：最难开口的对话"></a>六、绩效评估：最难开口的对话</h2><p>格鲁夫对绩效评估的看法很直接：</p><blockquote><p>“绩效评估是管理者最重要也最容易逃避的职责。”</p></blockquote><h3 id="评估的三个目的"><a href="#评估的三个目的" class="headerlink" title="评估的三个目的"></a>评估的三个目的</h3><ol><li><strong>评价过去表现</strong>：客观描述发生了什么，避免”月晕效应”（一个突出的优点掩盖其他问题）</li><li><strong>提升未来绩效</strong>：给出具体可行的改进方向</li><li><strong>激励</strong>：让员工知道努力有回报</li></ol><h3 id="格式化评估的误区"><a href="#格式化评估的误区" class="headerlink" title="格式化评估的误区"></a>格式化评估的误区</h3><p>他特别批评了”三明治反馈法”（好话-坏话-好话）：表面上温和，实际上让被评估者只记住了两头的好话，忽略了中间的问题。</p><p>更有效的做法：直接、具体、基于事实，不绕弯子。</p><h3 id="对”明星员工”的评估"><a href="#对”明星员工”的评估" class="headerlink" title="对”明星员工”的评估"></a>对”明星员工”的评估</h3><p>很多管理者对高绩效员工只是”点赞”，缺乏实质反馈。格鲁夫认为这是浪费——明星员工同样需要被告知<strong>哪里还有提升空间</strong>，否则就是在阻碍他们成长。</p><hr><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>TRM 模型给了管理者一个清晰的决策框架：<strong>在授权和指令之间的选择，取决于对方在这件具体事情上的成熟度</strong>，而不是对这个人的整体印象。绩效评估则提醒我们，管理者的职责是说真话，而不是维持表面的和谐。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 读书笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 读书笔记 </tag>
+            
+            <tag> 管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>AI 编程时代，你的优势是什么 · 个人总结</title>
       <link href="//2026/02/08/ai-coding-expertise-advantage/"/>
       <url>//2026/02/08/ai-coding-expertise-advantage/</url>
@@ -632,33 +659,6 @@
             <tag> 个人总结 </tag>
             
             <tag> Agent </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《格鲁夫给经理人的第一课》读书笔记（三）：团队成熟度与管理风格</title>
-      <link href="//2026/02/08/grove-high-output-management-3/"/>
-      <url>//2026/02/08/grove-high-output-management-3/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本篇涵盖第五、六章：管理风格的弹性匹配，以及任务相关成熟度（Task-Relevant Maturity）。</p></blockquote><a id="more"></a><h2 id="五、任务相关成熟度（TRM）"><a href="#五、任务相关成熟度（TRM）" class="headerlink" title="五、任务相关成熟度（TRM）"></a>五、任务相关成熟度（TRM）</h2><p>这是本书最有实操价值的概念之一。格鲁夫指出，管理风格没有绝对的好坏，<strong>适合的才是最好的</strong>。决定管理风格的核心变量是：</p><blockquote><p><strong>任务相关成熟度（Task-Relevant Maturity, TRM）</strong><br>指下属在<strong>特定任务</strong>上的经验、能力和意愿，而非其整体能力水平。</p></blockquote><p>关键点：TRM 是<strong>任务相关的</strong>，不是人相关的。一个 10 年经验的工程师，在做一项全新技术方向的工作时，TRM 可能很低。</p><h3 id="三种管理风格对应三个-TRM-层级"><a href="#三种管理风格对应三个-TRM-层级" class="headerlink" title="三种管理风格对应三个 TRM 层级"></a>三种管理风格对应三个 TRM 层级</h3><table><thead><tr><th>TRM 水平</th><th>对应管理风格</th><th>核心做法</th></tr></thead><tbody><tr><td>低（新手/新任务）</td><td>结构化指令型</td><td>明确告知做什么、怎么做、检查节点</td></tr><tr><td>中（有基础但不稳定）</td><td>双向沟通型</td><td>共同讨论，解释原因，给予支持</td></tr><tr><td>高（熟练且自驱）</td><td>授权型</td><td>给目标，给资源，放手执行</td></tr></tbody></table><h3 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h3><ul><li><strong>对高 TRM 员工仍事无巨细</strong>：会让他们感到不被信任，产生挫败感，进而离职。</li><li><strong>对低 TRM 员工过度授权</strong>：等于把他扔进深水区，结果是失败和信心受损。</li></ul><p>在技术团队里，这个模型非常实用：新入职的校招生（低 TRM）需要详细的任务拆解；老员工接手陌生技术方向（中 TRM）需要一起讨论方案；核心老鸟（高 TRM）只需要给清楚目标和边界。</p><hr><h2 id="六、绩效评估：最难开口的对话"><a href="#六、绩效评估：最难开口的对话" class="headerlink" title="六、绩效评估：最难开口的对话"></a>六、绩效评估：最难开口的对话</h2><p>格鲁夫对绩效评估的看法很直接：</p><blockquote><p>“绩效评估是管理者最重要也最容易逃避的职责。”</p></blockquote><h3 id="评估的三个目的"><a href="#评估的三个目的" class="headerlink" title="评估的三个目的"></a>评估的三个目的</h3><ol><li><strong>评价过去表现</strong>：客观描述发生了什么，避免”月晕效应”（一个突出的优点掩盖其他问题）</li><li><strong>提升未来绩效</strong>：给出具体可行的改进方向</li><li><strong>激励</strong>：让员工知道努力有回报</li></ol><h3 id="格式化评估的误区"><a href="#格式化评估的误区" class="headerlink" title="格式化评估的误区"></a>格式化评估的误区</h3><p>他特别批评了”三明治反馈法”（好话-坏话-好话）：表面上温和，实际上让被评估者只记住了两头的好话，忽略了中间的问题。</p><p>更有效的做法：直接、具体、基于事实，不绕弯子。</p><h3 id="对”明星员工”的评估"><a href="#对”明星员工”的评估" class="headerlink" title="对”明星员工”的评估"></a>对”明星员工”的评估</h3><p>很多管理者对高绩效员工只是”点赞”，缺乏实质反馈。格鲁夫认为这是浪费——明星员工同样需要被告知<strong>哪里还有提升空间</strong>，否则就是在阻碍他们成长。</p><hr><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>TRM 模型给了管理者一个清晰的决策框架：<strong>在授权和指令之间的选择，取决于对方在这件具体事情上的成熟度</strong>，而不是对这个人的整体印象。绩效评估则提醒我们，管理者的职责是说真话，而不是维持表面的和谐。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 读书笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 读书笔记 </tag>
-            
-            <tag> 管理 </tag>
             
         </tags>
       
@@ -1488,31 +1488,6 @@
     
     
     <entry>
-      <title>MySQL 日志</title>
-      <link href="//2023/05/23/mysql-ri-zhi/"/>
-      <url>//2023/05/23/mysql-ri-zhi/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、日志"><a href="#一、日志" class="headerlink" title="一、日志"></a>一、日志</h1><h2 id="（1）错误日志"><a href="#（1）错误日志" class="headerlink" title="（1）错误日志"></a>（1）错误日志</h2><p>错误日志时MySQL中最重要的日志之一，它记录了mysqld启动和停止时，以及服务器再运行过程中发生任何严重错误时的相关信息。当数据库出现任何故障导致无法正常使用时，建议首先查看此日志。</p><p>该日志时默认开启的，默认存放目录/var/log/，默认的日志文件名为mysqld.log。查看日志位置：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_error%&#x27;</span> </span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（2）二进制日志"><a href="#（2）二进制日志" class="headerlink" title="（2）二进制日志"></a>（2）二进制日志</h2><p>二进制日志（BINLOG）记录了所有的DDL语句和DML语句，但不包括数据查询语句（SELECT、SHOW）。</p><p>作用：</p><p>（1）灾难时的数据恢复</p><p>（2）MySQL的主从复制</p><p>在MySQL8版本中，默认二进制日志时开启着的：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_bin%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><table><thead><tr><th>日志格式</th><th>含义</th></tr></thead><tbody><tr><td>STATEMENT</td><td>基于SQL语句的日志记录，记录的是SQL语句，对数据进行修改的SQL都会记录在日志文件中。</td></tr><tr><td>ROW</td><td>基于行的日志记录，记录的是每一行的数据变更。（默认）</td></tr><tr><td>MIXED</td><td>混合了STATEMENT和ROW两种格式，默认采用STATEMENT，在某些特殊情况下会自动切换为ROW进行记录。</td></tr></tbody></table><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_format%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><strong>日志查看</strong></p><p>由于日志是以二进制方式存储的，不能直接读取，需要通过二进制日志查询工具mysqlbinlog来查看：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqlbinlog [参数选项] logfilename</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>参数选项：</p><p>-d 指定数据库名称，只列除指定的数据库相关操作。</p><p>-o 忽略掉日志中的前n行命令。</p><p>-v 将行事件（数据变更）重构为SQL语句。</p><p>-w 将行事件（数据变更）重构为SQL语句，并输出注释信息。</p><p><strong>日志删除</strong></p><p>对于比较繁忙的业务系统，每天生成的binlog数据巨大，如果长时间不清除，将会占用大量磁盘空间。</p><table><thead><tr><th>指令</th><th>含义</th></tr></thead><tbody><tr><td>reset master</td><td>删除全部binlog日志，删除之后，日志编号，将从binlog.000001重新开始</td></tr><tr><td>purge master logs to ‘binlog.xxxxxx’</td><td>删除xxxxxx编号之前的所有日志</td></tr><tr><td>purge master logs before ‘yyyy-mm-dd hh24:mi:ss’</td><td>删除日志为”yyyy-mm-dd hh24:mi:ss”之前产生的所有日志</td></tr></tbody></table><p>可以在mysql的配置文件中配置二进制日志的过期时间，设置之后，二进制日志过期会自动删除（默认30天）</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_expire_logs_seconds%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（3）查询日志"><a href="#（3）查询日志" class="headerlink" title="（3）查询日志"></a>（3）查询日志</h2><p>查询日志中记录了客户端的所有操作，而二进制日志不包含查询数据的SQL语句。默认情况下，查询日志是不开启的。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%general%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>修改配置文件开启查询日志：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改MySQL的配置文件<span class="operator">/</span>ect<span class="operator">/</span>my.cnf文件，添加如下内容</span><br><span class="line">general_log<span class="operator">=</span><span class="number">1</span>   #开启查询日志，<span class="number">0</span>关闭，<span class="number">1</span>开启</span><br><span class="line">general_log_file<span class="operator">=</span>mysql_query.log    #设置日志文件名，默认host_name.log</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（4）慢查询日志"><a href="#（4）慢查询日志" class="headerlink" title="（4）慢查询日志"></a>（4）慢查询日志</h2><p>慢查询日志记录了所有执行时间超过指定参数（long_query_time，默认10s）的所有SQL语句的日志。</p><p>SHOW VARIABLES LIKE ‘slow_query_log’; MySQL的慢查询日志是默认不开启的，需要在MySQL的配置文件（/ect/my.cnf）中配置如下信息：</p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e661d2c2f6fe4160b1fa02227e46a812.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p><p> 配置完毕之后，重新启动MySQL服务器进行测试，查看慢日志文件中记录的信息：/var/lib/mysql/localhost-slow.log。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> MySQL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>打家劫舍（动态规划）</title>
       <link href="//2023/05/23/da-jia-jie-she-wen-ti-suan-fa/"/>
       <url>//2023/05/23/da-jia-jie-she-wen-ti-suan-fa/</url>
@@ -1534,6 +1509,31 @@
             <tag> 算法 </tag>
             
             <tag> 动态规划 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL 日志</title>
+      <link href="//2023/05/23/mysql-ri-zhi/"/>
+      <url>//2023/05/23/mysql-ri-zhi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、日志"><a href="#一、日志" class="headerlink" title="一、日志"></a>一、日志</h1><h2 id="（1）错误日志"><a href="#（1）错误日志" class="headerlink" title="（1）错误日志"></a>（1）错误日志</h2><p>错误日志时MySQL中最重要的日志之一，它记录了mysqld启动和停止时，以及服务器再运行过程中发生任何严重错误时的相关信息。当数据库出现任何故障导致无法正常使用时，建议首先查看此日志。</p><p>该日志时默认开启的，默认存放目录/var/log/，默认的日志文件名为mysqld.log。查看日志位置：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_error%&#x27;</span> </span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（2）二进制日志"><a href="#（2）二进制日志" class="headerlink" title="（2）二进制日志"></a>（2）二进制日志</h2><p>二进制日志（BINLOG）记录了所有的DDL语句和DML语句，但不包括数据查询语句（SELECT、SHOW）。</p><p>作用：</p><p>（1）灾难时的数据恢复</p><p>（2）MySQL的主从复制</p><p>在MySQL8版本中，默认二进制日志时开启着的：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%log_bin%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><table><thead><tr><th>日志格式</th><th>含义</th></tr></thead><tbody><tr><td>STATEMENT</td><td>基于SQL语句的日志记录，记录的是SQL语句，对数据进行修改的SQL都会记录在日志文件中。</td></tr><tr><td>ROW</td><td>基于行的日志记录，记录的是每一行的数据变更。（默认）</td></tr><tr><td>MIXED</td><td>混合了STATEMENT和ROW两种格式，默认采用STATEMENT，在某些特殊情况下会自动切换为ROW进行记录。</td></tr></tbody></table><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_format%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><strong>日志查看</strong></p><p>由于日志是以二进制方式存储的，不能直接读取，需要通过二进制日志查询工具mysqlbinlog来查看：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqlbinlog [参数选项] logfilename</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>参数选项：</p><p>-d 指定数据库名称，只列除指定的数据库相关操作。</p><p>-o 忽略掉日志中的前n行命令。</p><p>-v 将行事件（数据变更）重构为SQL语句。</p><p>-w 将行事件（数据变更）重构为SQL语句，并输出注释信息。</p><p><strong>日志删除</strong></p><p>对于比较繁忙的业务系统，每天生成的binlog数据巨大，如果长时间不清除，将会占用大量磁盘空间。</p><table><thead><tr><th>指令</th><th>含义</th></tr></thead><tbody><tr><td>reset master</td><td>删除全部binlog日志，删除之后，日志编号，将从binlog.000001重新开始</td></tr><tr><td>purge master logs to ‘binlog.xxxxxx’</td><td>删除xxxxxx编号之前的所有日志</td></tr><tr><td>purge master logs before ‘yyyy-mm-dd hh24:mi:ss’</td><td>删除日志为”yyyy-mm-dd hh24:mi:ss”之前产生的所有日志</td></tr></tbody></table><p>可以在mysql的配置文件中配置二进制日志的过期时间，设置之后，二进制日志过期会自动删除（默认30天）</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%binlog_expire_logs_seconds%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（3）查询日志"><a href="#（3）查询日志" class="headerlink" title="（3）查询日志"></a>（3）查询日志</h2><p>查询日志中记录了客户端的所有操作，而二进制日志不包含查询数据的SQL语句。默认情况下，查询日志是不开启的。</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;%general%&#x27;</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>修改配置文件开启查询日志：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#修改MySQL的配置文件<span class="operator">/</span>ect<span class="operator">/</span>my.cnf文件，添加如下内容</span><br><span class="line">general_log<span class="operator">=</span><span class="number">1</span>   #开启查询日志，<span class="number">0</span>关闭，<span class="number">1</span>开启</span><br><span class="line">general_log_file<span class="operator">=</span>mysql_query.log    #设置日志文件名，默认host_name.log</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="（4）慢查询日志"><a href="#（4）慢查询日志" class="headerlink" title="（4）慢查询日志"></a>（4）慢查询日志</h2><p>慢查询日志记录了所有执行时间超过指定参数（long_query_time，默认10s）的所有SQL语句的日志。</p><p>SHOW VARIABLES LIKE ‘slow_query_log’; MySQL的慢查询日志是默认不开启的，需要在MySQL的配置文件（/ect/my.cnf）中配置如下信息：</p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e661d2c2f6fe4160b1fa02227e46a812.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p><p> 配置完毕之后，重新启动MySQL服务器进行测试，查看慢日志文件中记录的信息：/var/lib/mysql/localhost-slow.log。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
             
         </tags>
       
@@ -2942,20 +2942,20 @@
     
     
     <entry>
-      <title>bangumis</title>
-      <link href="/bangumis/index.html"/>
-      <url>/bangumis/index.html</url>
+      <title></title>
+      <link href="/sw.js"/>
+      <url>/sw.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[self.addEventListener("install",(function(){self.skipWaiting()})),self.addEventListener("activate",(function(n){n.waitUntil(caches.keys().then((function(n){return Promise.all(n.map((function(n){return caches.delete(n)})))})).then((function(){return self.clients.matchAll({type:"window",includeUncontrolled:!0})})).then((function(n){n.forEach((function(n){n.navigate(n.url)}))})).then((function(){return self.registration.unregister()})))}));]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>bangumis</title>
+      <link href="/bangumis/index.html"/>
+      <url>/bangumis/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -2986,22 +2986,33 @@
     
     
     <entry>
-      <title>我的故事</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>shuoshuo</title>
+      <link href="/shuoshuo/index.html"/>
+      <url>/shuoshuo/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="我的故事"><a href="#我的故事" class="headerlink" title="我的故事"></a>我的故事</h1><p>我是 <strong>李孟瑶</strong>，网名脑瓜呆呆。Java 后端开发，目前在 <strong>旺店通</strong> 供销平台方向，做搜索、中间件排查和小组协作相关的事。</p><p>下面随便写写大学到工作这几段经历。<a href="/archives/">全部文章</a> 从 2021 年 11 月排下来，和这里写的是同一段时间。</p><hr><h2 id="大学：在实验室里练出来的"><a href="#大学：在实验室里练出来的" class="headerlink" title="大学：在实验室里练出来的"></a>大学：在实验室里练出来的</h2><p>选计算机没什么浪漫的理由，大一填志愿就是冲着就业去的。后来进了学院实验室，节奏比想象中严得多：寒假两周、暑假一周、国庆两天——差不多就这些假；没课的时间基本都在实验室，早八到晚十一点四十。</p><p>刚进去那阵子，Java 是真的跟不上。我还请过假，请到自己都不好意思了。但慢慢也适应了。大一下学期看过考研率和就业形势之后，我决定<strong>完全走就业方向</strong>，不再两头摇摆。之后开始和同学一起做项目，B 站、博客、公众号、书籍，有什么学什么，能动手就动手。</p><p>那几年打比赛、做考核项目、在力扣上补算法——不少都写在这个博客里了。算法一直不是我的长项，但练着练着也还过得去：CCPC 全国邀请赛铜奖、省赛银奖，蓝桥杯 Java 软件开发国赛一等奖（2024）。大三暑假在美团实习过一段，对后端开发有了更具体的认识。</p><p>河南科技学院 · 计算机科学与技术 · <strong>2025 年毕业</strong>。</p><hr><h2 id="工作：供销平台这条线"><a href="#工作：供销平台这条线" class="headerlink" title="工作：供销平台这条线"></a>工作：供销平台这条线</h2><p>毕业后加入旺店通。公司体量不小，但我对自己并不满意——入组考核开始就憋着劲，想尽快能独立交付。</p><p><strong>入组头八九个月，路线大致是这样：</strong> 第一周定搜索方向并留下来 → 头三周攻坚搜索并上线 → 约一个月后带实习生做小程序 → 之后并行啃 ES 不同步、帮导师/data 组 → 五个月左右拆组当负责人 → 自己提报人才计划项目 → 六七个月转正时 P4 破格晋升 P5。</p><h3 id="那个改变计划的第一周"><a href="#那个改变计划的第一周" class="headerlink" title="那个改变计划的第一周"></a>那个改变计划的第一周</h3><p>入组后，我的导师在数据组，平时也很忙。他的安排是：先在供销平台待一周熟悉环境，第二周带我接手他手下另一位同事的任务——按原计划，之后我应该跟着导师去数据组。</p><p>第一周让我「先看看搜索」。后来我才慢慢明白，领导前期其实不太放心——搜索是供销平台的老问题，让一个新人待一周、了解一下就行，一周之后还是按原计划去数据组，并没指望我能改出什么名堂。我没想太多，把现有方案梳理了一遍，做了几个方向的对比，把基础方案定了下来。销售和运营侧很快看到了变化，计划于是改了：我留了下来，继续把搜索做下去。</p><p>这大概是我入职后第一个转折点——不是抢来的机会，是一周之内把事做成了。</p><h3 id="搜索改造"><a href="#搜索改造" class="headerlink" title="搜索改造"></a>搜索改造</h3><p>头三周里，我把精力主要放在搜索业务上。</p><p>改造前，供销平台搜索的问题很具体：该出来的结果匹配不到，无关结果又多。我往下查，发现 IK 分词即使用最细粒度，对业务里的 SKU、规格字段来说还是偏粗；索引结构也和实际查询方式对不上。</p><p>这三周里重建索引、调整分词策略，搜索方案上线。销售同事后来反馈，售前演示效果好——对他们来讲，这比技术指标直观得多。</p><h3 id="带实习生做小程序，以及-ES-不同步"><a href="#带实习生做小程序，以及-ES-不同步" class="headerlink" title="带实习生做小程序，以及 ES 不同步"></a>带实习生做小程序，以及 ES 不同步</h3><p>小程序那边主要是接口响应慢。大约一个月后，我开始带两位实习生一起做——我给他们分工，审查代码，帮他们优化一时搞不定的接口，也教他们自己排查慢请求的方法。</p><p>带实习生这段时间之后，领导把供应链里最大的一块硬骨头分给了我：ES 不同步。这块没有「一次性改完」的方案，基本是我发现一个问题、改一个问题，慢慢压下去。客户工单几乎每天都有，失败量高峰期每天上万条，后来才一点点降下来：几千、几百，现在基本归零。</p><p>同一时期，导师那边缺人手，我也过去帮了一阵，跟着做了些 data 组的需求，接触了 Doris、DolphinScheduler 调度任务等——和啃 ES 是并行在做的，两边都在推进。</p><p>那两个月里，工作日不够，双休也用来接 ES 相关的客户反馈。最难的阶段是 ES 整体压力都很大，症状有，根因却不好定位。我是一步步加日志、梳理所有接口和访问频率、接企业微信消息通知，才慢慢把链路看清。节点 Yellow、断路器、消息体积、连接池配置……都是这么抠出来的。这些排查过程，后来整理成了博客里的 <a href="/series/#elasticsearch">ES</a>、<a href="/series/">MQ</a> 系列笔记。</p><p>五个月左右，供销平台拆出独立小组，我担任小组负责人。六七个月转正时参加晋升答辩，讲了 ES 同步优化和搜索改造这两块，P4 破格晋升 P5。</p><h3 id="带小组之后：机制、AI-与管理"><a href="#带小组之后：机制、AI-与管理" class="headerlink" title="带小组之后：机制、AI 与管理"></a>带小组之后：机制、AI 与管理</h3><p>组里五个人，分工大致是：我负责搜索；一人负责 ERP 转供销；一人负责价格模块；两人参与公司专项计划，其中一人经验相对少，主要在专项里帮忙。</p><p>当上小组负责人之后，我对供销平台整体业务还需要补一遍。我主动接下了组内大约一半的客户工单，从全平台的真实问题里反推业务——工单里什么模块都有，比干看文档快得多，后面推机制、对齐排期时也更有底气。</p><p>当负责人之后，我自己提报了公司人才选拔计划的项目：用 Python 做搜索无结果推荐，对照竞品看用户在搜不到的时候该怎么兜底，而不只是修「搜不到」本身。</p><p>带人之后慢慢意识到，光自己写代码不够，还得把协作和流程理顺。陆续推了一些措施——技术文档评审、工作负载看板、线上问题看板等，让供销平台的制度和规范更完整一些。组里新人多，每个人熟悉的业务面不一样；负载有时不均衡，产品排期又紧，看板用来和产品一起对齐；大 Key、慢 SQL、OOM 之类的问题频发，就想风险前置，谁发现了就记进去，可以自己选择要不要接。</p><p>工作后我也开始系统地接触 AI：自己日常开发靠 Cursor、Claude 提效；组里则把阿里开源的 <a href="https://github.com/alibaba/open-code-review">Open Code Review</a> 接进了流水线，已经全面投入使用——尽量把 AI 嵌进现有流程，而不是单独做个 demo。</p><p>管理类的书是那段时间集中补的，<a href="/2025/12/05/grove-high-output-management-1/">格鲁夫</a>、<a href="/2025/12/20/huawei-management-strategy/">华为相关</a> 的读书笔记都在这个博客里。</p><hr><h2 id="持续在学什么"><a href="#持续在学什么" class="headerlink" title="持续在学什么"></a>持续在学什么</h2><p>我的学习基本跟着业务走，不太单独列「学习计划」：</p><ul><li><strong>技术深度</strong>：通读过《<a href="/2025/08/15/elasticsearch-the-definitive-guide/">Elasticsearch 权威指南</a>》，并据此写了 ES 存储引擎系列；规范类翻过<a href="/2025/06/08/alibaba-java-coding-guidelines-1/">阿里 Java 手册</a>、<a href="/2025/07/20/clean-code-notes/">Clean Code</a></li><li><strong>产品视角</strong>：<a href="/2025/08/22/everyone-is-product-manager-notes/">《人人都是产品经理》</a>、<a href="/2025/09/18/wang-huiwen-tsinghua-product-course/">王慧文清华产品课</a>——做搜索和推荐，不能只懂接口和索引，还得理解用户在找什么</li><li><strong>数据与工程</strong>：Doris、DolphinScheduler、PHP / Python，大多是因为项目需要现学现用</li><li><strong>AI</strong>：Cursor / Claude 写代码和读源码；Open Code Review 做组内 Code Review 门禁</li></ul><hr><h2 id="和这个博客"><a href="#和这个博客" class="headerlink" title="和这个博客"></a>和这个博客</h2><p>这个站点是笔记本，不是作品集。工作中遇到不懂的——ES、RocketMQ、OOM、大 Key 之类——会查资料、踩坑、写在这里；书读完了也顺手整理。按主题浏览可以看 **<a href="/series/">系列笔记</a>**；想按时间翻可以从 <strong><a href="/archives/">全部文章</a></strong> 的 2021 年看起。</p><p>早期文章和现在的风格可能不太一样，但都留着——算是一段完整的记录。</p><hr><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class='btn center cool-2'><a class="button" href='https://github.com/W-Li-You' title='GitHub'><i class='fab fa-github'></i>GitHub</a></span><span class='btn center cool-2'><a class="button" href='https://blog.csdn.net/Alingte7' title='CSDN'><i class='fa-solid fa-keyboard'></i>CSDN</a></span><span class='btn center cool-2'><a class="button" href='mailto:w-li-you@foxmail.com' title='邮箱'><i class='fas fa-envelope'></i>邮箱</a></span></div>]]></content>
+        <content type="html"><![CDATA[<script type="text/javascript" src="https://unpkg.com/artitalk"></script><div id="artitalk_main"></div><script>new Artitalk({    appId: 'eJbW6E6e9SRU5t1jE7Jno2Z3-gzGzoHsz',     appKey: 'W7kpeWkmV0dhfvj94ZmOtnRf' ,    serverURL: 'http://localhost:4000/shuoshuo/',    bgImg: ''})</script>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>shuoshuo</title>
-      <link href="/shuoshuo/index.html"/>
-      <url>/shuoshuo/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="https://unpkg.com/artitalk"></script><div id="artitalk_main"></div><script>new Artitalk({    appId: 'eJbW6E6e9SRU5t1jE7Jno2Z3-gzGzoHsz',     appKey: 'W7kpeWkmV0dhfvj94ZmOtnRf' ,    serverURL: 'http://localhost:4000/shuoshuo/',    bgImg: ''})</script>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的故事</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="我的故事"><a href="#我的故事" class="headerlink" title="我的故事"></a>我的故事</h1><p>我是 <strong>李孟瑶</strong>，网名脑瓜呆呆。Java 后端开发，目前在 <strong>旺店通</strong> 供销平台方向，做搜索、中间件排查和小组协作相关的事。</p><p>下面随便写写大学到工作这几段经历。<a href="/archives/">全部文章</a> 从 2021 年 11 月排下来，和这里写的是同一段时间。</p><hr><h2 id="大学：在实验室里练出来的"><a href="#大学：在实验室里练出来的" class="headerlink" title="大学：在实验室里练出来的"></a>大学：在实验室里练出来的</h2><p>选计算机没什么浪漫的理由，大一填志愿就是冲着就业去的。后来进了学院实验室，节奏比想象中严得多：寒假两周、暑假一周、国庆两天——差不多就这些假；没课的时间基本都在实验室，早八到晚十一点四十。</p><p>刚进去那阵子，Java 是真的跟不上。我还请过假，请到自己都不好意思了。但慢慢也适应了。大一下学期看过考研率和就业形势之后，我决定<strong>完全走就业方向</strong>，不再两头摇摆。之后开始和同学一起做项目，B 站、博客、公众号、书籍，有什么学什么，能动手就动手。</p><p>那几年打比赛、做考核项目、在力扣上补算法——不少都写在这个博客里了。算法一直不是我的长项，但练着练着也还过得去：CCPC 全国邀请赛铜奖、省赛银奖，蓝桥杯 Java 软件开发国赛一等奖（2024）。大三暑假在美团实习过一段，对后端开发有了更具体的认识。</p><p>河南科技学院 · 计算机科学与技术 · <strong>2025 年毕业</strong>。</p><hr><h2 id="工作：供销平台这条线"><a href="#工作：供销平台这条线" class="headerlink" title="工作：供销平台这条线"></a>工作：供销平台这条线</h2><p>毕业后加入旺店通。公司体量不小，但我对自己并不满意——入组考核开始就憋着劲，想尽快能独立交付。</p><p><strong>入组头八九个月，路线大致是这样：</strong> 第一周定搜索方向并留下来 → 头三周攻坚搜索并上线 → 约一个月后带实习生做小程序 → 之后并行啃 ES 不同步、帮导师/data 组 → 五个月左右拆组当负责人 → 自己提报人才计划项目 → 六七个月转正时 P4 破格晋升 P5。</p><h3 id="那个改变计划的第一周"><a href="#那个改变计划的第一周" class="headerlink" title="那个改变计划的第一周"></a>那个改变计划的第一周</h3><p>入组后，我的导师在数据组，平时也很忙。他的安排是：先在供销平台待一周熟悉环境，第二周带我接手他手下另一位同事的任务——按原计划，之后我应该跟着导师去数据组。</p><p>第一周让我「先看看搜索」。后来我才慢慢明白，领导前期其实不太放心——搜索是供销平台的老问题，让一个新人待一周、了解一下就行，一周之后还是按原计划去数据组，并没指望我能改出什么名堂。我没想太多，把现有方案梳理了一遍，做了几个方向的对比，把基础方案定了下来。销售和运营侧很快看到了变化，计划于是改了：我留了下来，继续把搜索做下去。</p><p>这大概是我入职后第一个转折点——不是抢来的机会，是一周之内把事做成了。</p><h3 id="搜索改造"><a href="#搜索改造" class="headerlink" title="搜索改造"></a>搜索改造</h3><p>头三周里，我把精力主要放在搜索业务上。</p><p>改造前，供销平台搜索的问题很具体：该出来的结果匹配不到，无关结果又多。我往下查，发现 IK 分词即使用最细粒度，对业务里的 SKU、规格字段来说还是偏粗；索引结构也和实际查询方式对不上。</p><p>这三周里重建索引、调整分词策略，搜索方案上线。销售同事后来反馈，售前演示效果好——对他们来讲，这比技术指标直观得多。</p><h3 id="带实习生做小程序，以及-ES-不同步"><a href="#带实习生做小程序，以及-ES-不同步" class="headerlink" title="带实习生做小程序，以及 ES 不同步"></a>带实习生做小程序，以及 ES 不同步</h3><p>小程序那边主要是接口响应慢。大约一个月后，我开始带两位实习生一起做——我给他们分工，审查代码，帮他们优化一时搞不定的接口，也教他们自己排查慢请求的方法。</p><p>带实习生这段时间之后，领导把供应链里最大的一块硬骨头分给了我：ES 不同步。这块没有「一次性改完」的方案，基本是我发现一个问题、改一个问题，慢慢压下去。客户工单几乎每天都有，失败量高峰期每天上万条，后来才一点点降下来：几千、几百，现在基本归零。</p><p>同一时期，导师那边缺人手，我也过去帮了一阵，跟着做了些 data 组的需求，接触了 Doris、DolphinScheduler 调度任务等——和啃 ES 是并行在做的，两边都在推进。</p><p>那两个月里，工作日不够，双休也用来接 ES 相关的客户反馈。最难的阶段是 ES 整体压力都很大，症状有，根因却不好定位。我是一步步加日志、梳理所有接口和访问频率、接企业微信消息通知，才慢慢把链路看清。节点 Yellow、断路器、消息体积、连接池配置……都是这么抠出来的。这些排查过程，后来整理成了博客里的 <a href="/series/#elasticsearch">ES</a>、<a href="/series/">MQ</a> 系列笔记。</p><p>五个月左右，供销平台拆出独立小组，我担任小组负责人。六七个月转正时参加晋升答辩，讲了 ES 同步优化和搜索改造这两块，P4 破格晋升 P5。</p><h3 id="带小组之后：机制、AI-与管理"><a href="#带小组之后：机制、AI-与管理" class="headerlink" title="带小组之后：机制、AI 与管理"></a>带小组之后：机制、AI 与管理</h3><p>组里五个人，分工大致是：我负责搜索；一人负责 ERP 转供销；一人负责价格模块；两人参与公司专项计划，其中一人经验相对少，主要在专项里帮忙。</p><p>当上小组负责人之后，我对供销平台整体业务还需要补一遍。我主动接下了组内大约一半的客户工单，从全平台的真实问题里反推业务——工单里什么模块都有，比干看文档快得多，后面推机制、对齐排期时也更有底气。</p><p>当负责人之后，我自己提报了公司人才选拔计划的项目：用 Python 做搜索无结果推荐，对照竞品看用户在搜不到的时候该怎么兜底，而不只是修「搜不到」本身。</p><p>带人之后慢慢意识到，光自己写代码不够，还得把协作和流程理顺。陆续推了一些措施——技术文档评审、工作负载看板、线上问题看板等，让供销平台的制度和规范更完整一些。组里新人多，每个人熟悉的业务面不一样；负载有时不均衡，产品排期又紧，看板用来和产品一起对齐；大 Key、慢 SQL、OOM 之类的问题频发，就想风险前置，谁发现了就记进去，可以自己选择要不要接。</p><p>工作后我也开始系统地接触 AI：自己日常开发靠 Cursor、Claude 提效；组里则把阿里开源的 <a href="https://github.com/alibaba/open-code-review">Open Code Review</a> 接进了流水线，已经全面投入使用——尽量把 AI 嵌进现有流程，而不是单独做个 demo。</p><p>管理类的书是那段时间集中补的，<a href="/2025/12/05/grove-high-output-management-1/">格鲁夫</a>、<a href="/2025/12/20/huawei-management-strategy/">华为相关</a> 的读书笔记都在这个博客里。</p><hr><h2 id="持续在学什么"><a href="#持续在学什么" class="headerlink" title="持续在学什么"></a>持续在学什么</h2><p>我的学习基本跟着业务走，不太单独列「学习计划」：</p><ul><li><strong>技术深度</strong>：通读过《<a href="/2025/08/15/elasticsearch-the-definitive-guide/">Elasticsearch 权威指南</a>》，并据此写了 ES 存储引擎系列；规范类翻过<a href="/2025/06/08/alibaba-java-coding-guidelines-1/">阿里 Java 手册</a>、<a href="/2025/07/20/clean-code-notes/">Clean Code</a></li><li><strong>产品视角</strong>：<a href="/2025/08/22/everyone-is-product-manager-notes/">《人人都是产品经理》</a>、<a href="/2025/09/18/wang-huiwen-tsinghua-product-course/">王慧文清华产品课</a>——做搜索和推荐，不能只懂接口和索引，还得理解用户在找什么</li><li><strong>数据与工程</strong>：Doris、DolphinScheduler、PHP / Python，大多是因为项目需要现学现用</li><li><strong>AI</strong>：Cursor / Claude 写代码和读源码；Open Code Review 做组内 Code Review 门禁</li></ul><hr><h2 id="和这个博客"><a href="#和这个博客" class="headerlink" title="和这个博客"></a>和这个博客</h2><p>这个站点是笔记本，不是作品集。工作中遇到不懂的——ES、RocketMQ、OOM、大 Key 之类——会查资料、踩坑、写在这里；书读完了也顺手整理。按主题浏览可以看 **<a href="/series/">系列笔记</a>**；想按时间翻可以从 <strong><a href="/archives/">全部文章</a></strong> 的 2021 年看起。</p><p>早期文章和现在的风格可能不太一样，但都留着——算是一段完整的记录。</p><hr><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class='btn center cool-2'><a class="button" href='https://github.com/W-Li-You' title='GitHub'><i class='fab fa-github'></i>GitHub</a></span><span class='btn center cool-2'><a class="button" href='https://blog.csdn.net/Alingte7' title='CSDN'><i class='fa-solid fa-keyboard'></i>CSDN</a></span><span class='btn center cool-2'><a class="button" href='mailto:w-li-you@foxmail.com' title='邮箱'><i class='fas fa-envelope'></i>邮箱</a></span></div>]]></content>
       
     </entry>
     
@@ -3024,17 +3035,6 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/sw.js"/>
-      <url>/sw.js</url>
-      
-        <content type="html"><![CDATA[self.addEventListener("install",(function(){self.skipWaiting()})),self.addEventListener("activate",(function(n){n.waitUntil(caches.keys().then((function(n){return Promise.all(n.map((function(n){return caches.delete(n)})))})).then((function(){return self.clients.matchAll({type:"window",includeUncontrolled:!0})})).then((function(n){n.forEach((function(n){n.navigate(n.url)}))})).then((function(){return self.registration.unregister()})))}));]]></content>
       
     </entry>
     
