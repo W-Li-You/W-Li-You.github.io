@@ -76,7 +76,7 @@
 <hr>]]>
     </summary>
     <title>搜推算法 · 知识索引</title>
-    <updated>2026-07-16T02:14:48.954Z</updated>
+    <updated>2026-07-16T02:29:06.135Z</updated>
   </entry>
   <entry>
     <author>
@@ -97,7 +97,7 @@
 </blockquote>]]>
     </summary>
     <title>Elasticsearch 深度分页：PIT（Point-In-Time）时间窗口详解</title>
-    <updated>2026-07-01T13:04:57.885Z</updated>
+    <updated>2026-07-16T02:28:23.882Z</updated>
   </entry>
   <entry>
     <author>
@@ -146,7 +146,7 @@
 <p>Elasticsearch 是工业界最常用的全文检索引擎，擅长倒排检索、BM25 打分与组合过滤。本文从搜推工程视角介绍 ES 的用法，与 <a href="/2026/02/16/es-segment-commitpoint-translog/">ES 存储引擎系列</a>（引擎原理）互补。</p>]]>
     </summary>
     <title>Elasticsearch 检索基础：倒排、深分页与读写分离</title>
-    <updated>2026-07-16T02:11:26.527Z</updated>
+    <updated>2026-07-16T02:29:06.182Z</updated>
   </entry>
   <entry>
     <author>
@@ -239,7 +239,7 @@
 <p>这篇是算法笔记的「最后一公里」：Query、召回、精排、指标的理论最终都要通过 AB 实验在线上验证。</p>]]>
     </summary>
     <title>AB 实验与线上迭代：搜推策略怎么科学上线</title>
-    <updated>2026-07-16T02:11:26.519Z</updated>
+    <updated>2026-07-16T02:30:09.778Z</updated>
   </entry>
   <entry>
     <author>
@@ -420,7 +420,7 @@
 <p>这篇把 LTR 精排和评价指标放在一起讲：先理解排序学习范式，再搞懂 NDCG 在量什么，最后串成完整的训练—评估—上线链路。</p>]]>
     </summary>
     <title>精排与评价指标：LambdaMART 从训练到度量</title>
-    <updated>2026-07-16T02:11:26.552Z</updated>
+    <updated>2026-07-16T02:30:09.774Z</updated>
   </entry>
   <entry>
     <author>
