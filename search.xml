@@ -2161,6 +2161,31 @@
     
     
     <entry>
+      <title>MySQL 存储引擎</title>
+      <link href="//2022/09/15/mysql-yin-qing/"/>
+      <url>//2022/09/15/mysql-yin-qing/</url>
+      
+        <content type="html"><![CDATA[<p><strong>常用的mysql引擎：MyISAM、InnoDB、Memory。</strong></p><a id="more"></a><p>MyISAM：MyISAM是mysql5.5之前的默认引擎。不支持事务，只支持表锁，不支持行锁。但是访问速度快。如果操作主要以读取和插入为主，修改和删除的操作很少，对数据的并发性和完整性要求并不是很强的情况下可以用该引擎，比如用户日志，评论等。</p><p>InnoDB：mysql5.5之后的默认引擎。支持事务和行锁，支持外键。是一种兼顾高可靠性和高性能的通用存储引擎。如果应用对事务的完整性有比较高的要求，在并发条件下要求数据的一致性，数据操作除了插入和查询之外，包含很多更新、删除操作，那么innodb是比较合适的选择。（B-Tree索引）</p><p>Memory：Memory是在内存中存储所有的数据。由于受到硬件的问题、或断电问题的影响，只能将这些表作为临时表或缓存使用。（Hash索引）</p><p><strong>查看数据库是否支持引擎：</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> ENGINES ;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e8d45acb76514a03bab54c4cd9c9a334.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>suport：是否支持引擎（default是默认引擎）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>String、StringBuilder 与 StringBuffer 的区别</title>
       <link href="//2022/09/15/string-stringbuilder-stringbuffer/"/>
       <url>//2022/09/15/string-stringbuilder-stringbuffer/</url>
@@ -2180,31 +2205,6 @@
             <tag> Java基础 </tag>
             
             <tag> 字符串 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MySQL 存储引擎</title>
-      <link href="//2022/09/15/mysql-yin-qing/"/>
-      <url>//2022/09/15/mysql-yin-qing/</url>
-      
-        <content type="html"><![CDATA[<p><strong>常用的mysql引擎：MyISAM、InnoDB、Memory。</strong></p><a id="more"></a><p>MyISAM：MyISAM是mysql5.5之前的默认引擎。不支持事务，只支持表锁，不支持行锁。但是访问速度快。如果操作主要以读取和插入为主，修改和删除的操作很少，对数据的并发性和完整性要求并不是很强的情况下可以用该引擎，比如用户日志，评论等。</p><p>InnoDB：mysql5.5之后的默认引擎。支持事务和行锁，支持外键。是一种兼顾高可靠性和高性能的通用存储引擎。如果应用对事务的完整性有比较高的要求，在并发条件下要求数据的一致性，数据操作除了插入和查询之外，包含很多更新、删除操作，那么innodb是比较合适的选择。（B-Tree索引）</p><p>Memory：Memory是在内存中存储所有的数据。由于受到硬件的问题、或断电问题的影响，只能将这些表作为临时表或缓存使用。（Hash索引）</p><p><strong>查看数据库是否支持引擎：</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> ENGINES ;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img-blog.csdnimg.cn/e8d45acb76514a03bab54c4cd9c9a334.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>suport：是否支持引擎（default是默认引擎）</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> MySQL </tag>
             
         </tags>
       
@@ -2953,22 +2953,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/sw.js"/>
-      <url>/sw.js</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[self.addEventListener("install",(function(){self.skipWaiting()})),self.addEventListener("activate",(function(n){n.waitUntil(caches.keys().then((function(n){return Promise.all(n.map((function(n){return caches.delete(n)})))})).then((function(){return self.clients.matchAll({type:"window",includeUncontrolled:!0})})).then((function(n){n.forEach((function(n){n.navigate(n.url)}))})).then((function(){return self.registration.unregister()})))}));]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>看似不起眼的日复一日，会在将来的某一天，突然让你看到坚持的意义</title>
+      <link href="/friends/index.html"/>
+      <url>/friends/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="site-card-group">    <a class="site-card" href="https://gulingc.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/QQ%E5%9B%BE%E7%89%8720230720113944.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/53341353DC33417CD7CE15B2EC9D9766.jpg"/><span class="title">林南而瑜</span><span class="desc">林南而瑜，不期而遇</span></div></a>    <a class="site-card" href="https://qmlmood.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/%7D~%7B%5D%25%29%28S%60Q%28%28PB_VCF%5D2RVG.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://pic4.zhimg.com/80/v2-45eb5749949e7f90a5c788f9bc5721ef_1440w.jpg"/><span class="title">Mood</span><span class="desc">小甲子的博客</span></div></a>    <a class="site-card" href="http://www.wall-e.icu/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/9222af785e9ea40034b8fe6fd4b4e5d2.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/f47eaedf2a15f1f146ab382d9858206a.jpg"/><span class="title">是小靳的~</span><span class="desc">欲买桂花同载酒，终不似少年游</span></div></a>    <a class="site-card" href="https://www.keeplover.top/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/index.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/avatar.jpg"/><span class="title">逐渐呆滞</span><span class="desc">快了，快了，快要找到了……</span></div></a>​<a class="site-card" href="https://www.zhaozihao.love/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.zhaozihao.love//image/wallhaven-jx13zp_1920x1080.png"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/test/fWagzr4qJDKn8E9.jpg"/><span class="title">赵子豪</span><span class="desc">茜茜在哪，我要找茜茜</span></div></a>​<a class="site-card" href="https://www.lovelsj.com/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src=" https://img.lovelsj.com/articles/0bee7ba5ac70155766648e14ae2a821f.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img.lovelsj.com/articles/QQ%E5%9B%BE%E7%89%8720220905144438.jpg"/><span class="title">瓜兮兮的男孩</span><span class="desc">五层血怒爆杀力扣</span></div></a></div>]]></content>
       
     </entry>
     
@@ -2997,11 +2997,11 @@
     
     
     <entry>
-      <title>看似不起眼的日复一日，会在将来的某一天，突然让你看到坚持的意义</title>
-      <link href="/friends/index.html"/>
-      <url>/friends/index.html</url>
+      <title>shuoshuo</title>
+      <link href="/shuoshuo/index.html"/>
+      <url>/shuoshuo/index.html</url>
       
-        <content type="html"><![CDATA[<div class="site-card-group">    <a class="site-card" href="https://gulingc.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/QQ%E5%9B%BE%E7%89%8720230720113944.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/53341353DC33417CD7CE15B2EC9D9766.jpg"/><span class="title">林南而瑜</span><span class="desc">林南而瑜，不期而遇</span></div></a>    <a class="site-card" href="https://qmlmood.github.io/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/%7D~%7B%5D%25%29%28S%60Q%28%28PB_VCF%5D2RVG.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://pic4.zhimg.com/80/v2-45eb5749949e7f90a5c788f9bc5721ef_1440w.jpg"/><span class="title">Mood</span><span class="desc">小甲子的博客</span></div></a>    <a class="site-card" href="http://www.wall-e.icu/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/9222af785e9ea40034b8fe6fd4b4e5d2.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/lmy/friend/f47eaedf2a15f1f146ab382d9858206a.jpg"/><span class="title">是小靳的~</span><span class="desc">欲买桂花同载酒，终不似少年游</span></div></a>    <a class="site-card" href="https://www.keeplover.top/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/index.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.keeplover.top/img/avatar.jpg"/><span class="title">逐渐呆滞</span><span class="desc">快了，快了，快要找到了……</span></div></a>​<a class="site-card" href="https://www.zhaozihao.love/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://www.zhaozihao.love//image/wallhaven-jx13zp_1920x1080.png"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://lmy-1311156074.cos.ap-nanjing.myqcloud.com/test/fWagzr4qJDKn8E9.jpg"/><span class="title">赵子豪</span><span class="desc">茜茜在哪，我要找茜茜</span></div></a>​<a class="site-card" href="https://www.lovelsj.com/"><div class="img"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src=" https://img.lovelsj.com/articles/0bee7ba5ac70155766648e14ae2a821f.jpg"/></div><div class="info"><img class="lazyload placeholder" src="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" data-src="https://img.lovelsj.com/articles/QQ%E5%9B%BE%E7%89%8720220905144438.jpg"/><span class="title">瓜兮兮的男孩</span><span class="desc">五层血怒爆杀力扣</span></div></a></div>]]></content>
+        <content type="html"><![CDATA[<script type="text/javascript" src="https://unpkg.com/artitalk"></script><div id="artitalk_main"></div><script>new Artitalk({    appId: 'eJbW6E6e9SRU5t1jE7Jno2Z3-gzGzoHsz',     appKey: 'W7kpeWkmV0dhfvj94ZmOtnRf' ,    serverURL: 'http://localhost:4000/shuoshuo/',    bgImg: ''})</script>]]></content>
       
     </entry>
     
@@ -3030,11 +3030,11 @@
     
     
     <entry>
-      <title>shuoshuo</title>
-      <link href="/shuoshuo/index.html"/>
-      <url>/shuoshuo/index.html</url>
+      <title></title>
+      <link href="/sw.js"/>
+      <url>/sw.js</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="https://unpkg.com/artitalk"></script><div id="artitalk_main"></div><script>new Artitalk({    appId: 'eJbW6E6e9SRU5t1jE7Jno2Z3-gzGzoHsz',     appKey: 'W7kpeWkmV0dhfvj94ZmOtnRf' ,    serverURL: 'http://localhost:4000/shuoshuo/',    bgImg: ''})</script>]]></content>
+        <content type="html"><![CDATA[self.addEventListener("install",(function(){self.skipWaiting()})),self.addEventListener("activate",(function(n){n.waitUntil(caches.keys().then((function(n){return Promise.all(n.map((function(n){return caches.delete(n)})))})).then((function(){return self.clients.matchAll({type:"window",includeUncontrolled:!0})})).then((function(n){n.forEach((function(n){n.navigate(n.url)}))})).then((function(){return self.registration.unregister()})))}));]]></content>
       
     </entry>
     
